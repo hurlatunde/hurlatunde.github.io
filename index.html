@@ -1,23 +1,139 @@
 ---
 layout: default
 ---
+<style>
 
-<div class="home">
+    body {
+        padding-top: 0px ! important;
+        position: relative;
+        font-family: 'Lato';
+    }
 
-  <h1 class="page-heading">Posts</h1>
+    .mcontent .header-4 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        color: white;
+        position: fixed;
+        top: 0;
+        display: block ! important;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+    }
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    .parent_element {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: block ! important;
+    }
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    .inner_element {
+        position: absolute;
+        display: block ! important;
+        top: 50%;
+        left: 50%;
+        z-index: 999;
+        width: 100%;
+        transform: translate(-50%, -50%);
+    }
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    .mcontent .nav-steps .steps-selectors {
+        margin: 0 40px;
+        font-size: 22px;
+        font-weight: normal;
+        color: #7f8c8d;
+        font-family: 'Lato';
+        letter-spacing: -7px;
+    }
 
-</div>
+    .mcontent .nav-steps > * {
+        font-family: 'Lato';
+        display: inline-block;
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+
+    .mcontent .nav-steps a.active {
+        opacity: 100;
+        filter: alpha(opacity=10000);
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    .mcontent .nav-steps a:hover, .mcontent .nav-steps a:focus {
+        opacity: 50;
+        filter: alpha(opacity=5000);
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+    .mcontent .nav-steps a:hover, .mcontent .nav-steps a:focus, .mcontent .nav-steps a.active {
+        color: #ffffff;
+    }
+
+    .mcontent .nav-steps a {
+        color: #ffffff;
+        opacity: 20;
+        filter: alpha(opacity=2000);
+        opacity: 0.2;
+        filter: alpha(opacity=20);
+    }
+
+</style>
+<header class="header-4 v-center bg-midnight-blue" style="background-color: #1c201d;">
+    <div class="background landing_background">&nbsp;</div>
+    <div class="parent_element">
+        <div class="inner_element">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="hero-unit">
+                            <h1>Startup Design Framework is coming!</h1>
+                            <p>The Second Sneak-Peek of Startup Design Framework</p>
+                        </div>
+
+                        <div class="btns hide">
+                            <a class="btn btn-large btn-primary" href="#">Join Startup Kit</a>
+                            <a class="btn btn-large btn-gray" href="#">Sign In</a>
+                        </div>
+
+                        <div class="nav-steps">
+                            <a href="#" class="active">HOME PAGE</a>
+                            <div class="steps-selectors">
+                                <a href="#" class="active">/</a>
+                                <a href="#">/</a>
+                                <a href="#">/</a>
+                                <a href="#">/</a>
+                            </div>
+                            <a href="#">UPCOMING EVENTS</a>
+
+                            {% for my_page in site.pages %}
+                            {% if my_page.title %}
+                            <a href="{{ my_page.url | prepend: site.baseurl }}"> &nbsp; / &nbsp; {{ my_page.title }}</a>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--<div class="home">-->
+<!--<h1 class="page-heading">Posts</h1>-->
+<!--<ul class="post-list">-->
+<!--{% for post in site.posts %}-->
+<!--<li>-->
+<!--<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>-->
+
+<!--<h2>-->
+<!--<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>-->
+<!--</h2>-->
+<!--</li>-->
+<!--{% endfor %}-->
+<!--</ul>-->
+<!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+<!--</div>-->

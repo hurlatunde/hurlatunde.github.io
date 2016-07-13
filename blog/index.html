@@ -1,0 +1,65 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<style>
+    body {
+        padding-top: 0px ! important;
+        position: relative;
+    }
+</style>
+
+
+<div>
+    {% include header.html %}
+
+    <section class="blog-2 blog-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div>
+                        {% for post in site.posts %}
+                        <div>
+                            <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                            <div class="promo" style="    margin: -20px 0 27px;">
+                                <h4 style="font-weight: 400;font-size: 15px;">{{ post.date | date: "%b %-d, %Y" }}</h4>
+                                <p class="hide">The samples consist of a set of 25 pages.</p>
+                            </div>
+                            <hr>
+                            <p class="hide"><button class="btn btn-inverse">Learn more</button></p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-sm-offset-2">
+                    <div class="related-articles">
+                        <h6>Related Articles</h6>
+                        <ul>
+                            <li>
+                                <a href="#">We have considered your needs in developing</a>
+                                <div>Jan 13</div>
+                            </li>
+                            <li>
+                                <a href="#">Some interesting thoughts</a>
+                                <div>Jan 13</div>
+                            </li>
+                            <li>
+                                <a href="#">Flat UI in Web Design. Best examples today</a>
+                                <div>Jan 13</div>
+                            </li>
+                            <li>
+                                <a href="#">We have considered your needs in developing</a>
+                                <div>Jan 13</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+</div>

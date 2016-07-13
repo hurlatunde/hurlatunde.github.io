@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Samples will show you the feeling on how to play around using the components in the website building process"
 date:   2016-07-13 13:56:26 +0100
 categories: jekyll update
 ---
