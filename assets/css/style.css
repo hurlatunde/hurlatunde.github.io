@@ -22258,3 +22258,10 @@ pre code span {
     -o-transition: color 0.25s, background 0.25s;
     transition: color 0.25s, background 0.25s;
 }
+
+.mcontent .blog-1 blockquote:before {
+    content: url('../img/quote-up.png');
+    position: absolute;
+    top: -17px;
+    left: -14px;
+}
