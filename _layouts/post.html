@@ -12,6 +12,52 @@ layout: default
         margin: 0 15px;
         white-space: nowrap;
     }
+
+    .blog_content p {
+        margin-bottom: 10px;
+    }
+
+    .mcontent .blog-1 .links, .mcontent .blog-1 .links * {
+        font-size: 13px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #bdc3c7;
+    }
+
+    .mcontent .blog-1 .links h6 {
+        margin: 0 0 23px;
+        letter-spacing: 0.19em;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .mcontent .blog-1 .links a {
+        color: #1abc9c;
+        font-size: 20px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.5;
+    }
+
+    .next {
+        text-align: right;
+    }
+
+    .mcontent .blog-1 .next:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 15px;
+        left: inherit! important;
+        bottom: 0;
+        width: 48px;
+        border-top: 3px solid #3498db;
+    }
+
 </style>
 
 <div>
@@ -20,9 +66,9 @@ layout: default
             <div class="container">
                 <h3> {{ page.title }} </h3>
                 <div class="submitted">
-                    <span><span class="fui-user"></span> {% include user.html username=site.github_username %} </span>
+                    <span><span> <img style="width: 22px;height: 22px;border-radius: 50%;" src="{{ site.owner.avatar }}"> </span> {% include user.html username=site.github_username %} </span>
                     <span><span class="fui-time"></span> {{ page.date | date: "%b %-d, %Y" }}</span>
-                    <span><span class="fui-round-bubble"></span> 25 comments</span>
+                    <span><span class="fui-round-bubble"></span> <a href="{{ post.url }}#disqus_thread"></a> </span>
                 </div>
             </div>
         </div>
@@ -33,77 +79,95 @@ layout: default
                     <div class="tags">
                         <h6>TAGS</h6>
                         <ul>
-                            <li><a href="#">design</a>
-                            </li>
-                            <li><a href="#">web design</a>
-                            </li>
-                            <li><a href="#">tutorials</a>
-                            </li>
-                            <li><a href="#">thoughts</a>
-                            </li>
+                            <li><a href="#">design</a></li>
+                            <li><a href="#">web design</a></li>
+                            <li><a href="#">tutorials</a></li>
+                            <li><a href="#">thoughts</a></li>
                         </ul>
                     </div>
                     <div class="comments">
                         <h6>COMMENTS</h6>
-                        <a href="#">25 comments</a>
+                        <a href="#"> <a href="{{ post.url }}#disqus_thread"></a> </a>
                     </div>
                 </div>
+
                 <div class="col-sm-9">
-                    <p>We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI
-                        Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also
-                        includes a PSD version for designers.</p>
-                    <p>We have considered your needs in developing the html version of our UI Kit, which contains the
-                        same elements as the PSD version and are perfect for creating great websites. With this UI Kit,
-                        you can spend even less time on routine work,
-                        saving that time for creativity.</p>
-                    <p>Flat UI Free contains many basic and complex components which are great for designers to have at
-                        hand: buttons, inputs, button groups, selects, checkboxes and radio-buttons, tags, menus,
-                        progress bars and sliders, navigation elements and
-                        more.
-                        <br>Colored, stylish icons can easily be modified and used in a wide variety of projects, as
-                        they contain original layers. Glyphs are also available in psd, html/css and svg formats.</p>
+
+                    <div>
+                        <div class="share-buttons">
+                            <h6>Share on: </h6>
+                            <ul>
+                                <li>
+                                    <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+                                </li>
+                            </ul>
+                        </div><!-- end share-buttons -->
+                    </div>
+
+                    <div id="blog_content">
+                        {{ content }}
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="links col-sm-6">
+                            <h6>previous article</h6>
+                            <a href="#">We have considered your needs in developing the html version</a>
+                        </div>
+
+                        <div class="links next col-sm-6">
+                            <h6>Next article</h6>
+                            <a href="#">We have considered your needs in developing the html version</a>
+                        </div>
+                    </div>
+
+                    <br>
+                    <!--comment-->
+                    <div>
+                        <div>
+                            {% if site.owner.disqus-shortname and page.comments == true %}
+                            <div id="disqus_thread"></div>
+                            {% include disqus.html %}
+                            {% endif %}
+                        </div>
+                    </div>
+                    <!--coment end-->
                 </div>
             </div>
-            <div class="boxes">
-                <div class="box-1"></div>
-                <div class="box-2"></div>
-                <div class="box-3"></div>
-                <div class="box-4"></div>
-            </div>
-            <p>Flat UI Free contains many basic and complex components which are great for designers to have at hand:
-                buttons, inputs, button groups, selects, checkboxes and radio-buttons, tags, menus, progress bars and
-                sliders, navigation elements and more.
-                Colored, stylish icons can easily be modified and used in a wide variety of projects, as they contain
-                original layers. Glyphs are also available in psd, html/css and svg formats.</p>
 
-
-            <div>
-                {% if site.owner.disqus-shortname and page.comments == true %}
-                <div id="disqus_thread"></div>
-                {% include disqus.html %}
-                {% endif %}
-            </div>
         </div>
     </section>
 
 
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <!--<article class="post" itemscope itemtype="http://schema.org/BlogPosting">-->
+        <!--<header class="post-header">-->
+            <!--<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>-->
+            <!--<p class="post-meta">-->
+                <!--<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b-->
+                    <!--%-d, %Y" }}-->
+                <!--</time>-->
+                <!--{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span-->
+                    <!--itemprop="name">{{ page.author }}</span></span>{% endif %}-->
+            <!--</p>-->
+        <!--</header>-->
+        <!--<div class="post-content" itemprop="articleBody">-->
+            <!--{{ content }}-->
+        <!--</div>-->
+    <!--</article>-->
 
-        <header class="post-header">
-            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-            <p class="post-meta">
-                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b
-                    %-d, %Y" }}
-                </time>
-                {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
-                    itemprop="name">{{ page.author }}</span></span>{% endif %}
-            </p>
-        </header>
-
-        <div class="post-content" itemprop="articleBody">
-            {{ content }}
-        </div>
-
-    </article>
     {% include footer.html %}
 </div>
+<script id="dsq-count-scr" src="//hurlatundegithubio.disqus.com/count.js" async></script>

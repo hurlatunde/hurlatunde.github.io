@@ -34,9 +34,9 @@ kramdown:
 # Site Owner configuration
 owner:
   username: Hurlatunde
-  name: Olatunde Owokoniran
-  avatar: avatar.jpg
-  job: "Your job"
+  name: Hurlatunde
+  avatar: https://z-1-scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/13612349_10205524814554405_7966782029174826798_n.jpg?oh=ccadbbd56049737eb7f3e887f1eb5235&oe=58280D54
+  job: "Software Develper"
   bio: "Write about yourself"
   email: hurlatunde@gmail.com
   disqus-shortname: hurlatundegithubio
