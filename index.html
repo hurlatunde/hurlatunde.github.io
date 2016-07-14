@@ -81,6 +81,31 @@ layout: default
         filter: alpha(opacity=20);
     }
 
+    .mcontent .header-4 .hero-unit h1 {
+        margin: 0 0 17px;
+        font-size: 60px;
+        font-weight: normal;
+        color: #ffffff;
+        line-height: 63px;
+        font-weight: 800;
+    }
+
+    .mcontent .header-4 .hero-unit p {
+        font-size: 28px;
+        font-weight: normal;
+        color: #ffffff;
+        width: 80%;
+        line-height: 38px;
+        font-weight: 300;
+    }
+    .q_style {
+        position: absolute;
+        display: block ! important;
+        bottom: 10px;
+        right: 40px;
+        z-index: 999;
+    }
+
 </style>
 <header class="header-4 v-center bg-midnight-blue" style="background-color: #1c201d;">
     <div class="background landing_background">&nbsp;</div>
@@ -88,10 +113,11 @@ layout: default
         <div class="inner_element">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-8">
                         <div class="hero-unit">
-                            <h1>Startup Design Framework is coming!</h1>
-                            <p>The Second Sneak-Peek of Startup Design Framework</p>
+                            <h1>Hello. I'm Olatunde Owokoniran,</h1>
+                            <p>A creative developer/designer focused on building awesome projects.</p>
+                            <p>Take a look.</p>
                         </div>
 
                         <div class="btns hide">
@@ -100,15 +126,13 @@ layout: default
                         </div>
 
                         <div class="nav-steps">
-                            <a href="#" class="active">HOME PAGE</a>
+                            <a href="#" class="active"> @Hurlatunde </a>
                             <div class="steps-selectors">
                                 <a href="#" class="active">/</a>
                                 <a href="#">/</a>
                                 <a href="#">/</a>
                                 <a href="#">/</a>
                             </div>
-                            <a href="#">UPCOMING EVENTS</a>
-
                             {% for my_page in site.pages %}
                             {% if my_page.title %}
                             <a href="{{ my_page.url | prepend: site.baseurl }}"> &nbsp; / &nbsp; {{ my_page.title }}</a>
@@ -118,6 +142,9 @@ layout: default
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="q_style">
+            <p style="font-size: 12px;"> DEVELOPER &bull; DESIGNER &bull; FREELANCER </p>
         </div>
     </div>
 </header>

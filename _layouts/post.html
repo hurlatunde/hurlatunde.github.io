@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 <style>
     body {
         padding-top: 0px ! important;
@@ -15,10 +14,7 @@ layout: default
     }
 </style>
 
-
 <div>
-    {% include header_inner_blog.html %}
-
     <section class="blog-1">
         <div class="title">
             <div class="container">
@@ -30,7 +26,6 @@ layout: default
                 </div>
             </div>
         </div>
-
 
         <div class="container">
             <div class="row">
@@ -54,12 +49,19 @@ layout: default
                     </div>
                 </div>
                 <div class="col-sm-9">
-                    <p>We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p>
-                    <p>We have considered your needs in developing the html version of our UI Kit, which contains the same elements as the PSD version and are perfect for creating great websites. With this UI Kit, you can spend even less time on routine work,
+                    <p>We have a great surprise for Designmodo fans – our first free HTML user interface kit. Flat UI
+                        Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also
+                        includes a PSD version for designers.</p>
+                    <p>We have considered your needs in developing the html version of our UI Kit, which contains the
+                        same elements as the PSD version and are perfect for creating great websites. With this UI Kit,
+                        you can spend even less time on routine work,
                         saving that time for creativity.</p>
-                    <p>Flat UI Free contains many basic and complex components which are great for designers to have at hand: buttons, inputs, button groups, selects, checkboxes and radio-buttons, tags, menus, progress bars and sliders, navigation elements and
+                    <p>Flat UI Free contains many basic and complex components which are great for designers to have at
+                        hand: buttons, inputs, button groups, selects, checkboxes and radio-buttons, tags, menus,
+                        progress bars and sliders, navigation elements and
                         more.
-                        <br>Colored, stylish icons can easily be modified and used in a wide variety of projects, as they contain original layers. Glyphs are also available in psd, html/css and svg formats.</p>
+                        <br>Colored, stylish icons can easily be modified and used in a wide variety of projects, as
+                        they contain original layers. Glyphs are also available in psd, html/css and svg formats.</p>
                 </div>
             </div>
             <div class="boxes">
@@ -68,54 +70,21 @@ layout: default
                 <div class="box-3"></div>
                 <div class="box-4"></div>
             </div>
-            <p>Flat UI Free contains many basic and complex components which are great for designers to have at hand: buttons, inputs, button groups, selects, checkboxes and radio-buttons, tags, menus, progress bars and sliders, navigation elements and more.
-                Colored, stylish icons can easily be modified and used in a wide variety of projects, as they contain original layers. Glyphs are also available in psd, html/css and svg formats.</p>
+            <p>Flat UI Free contains many basic and complex components which are great for designers to have at hand:
+                buttons, inputs, button groups, selects, checkboxes and radio-buttons, tags, menus, progress bars and
+                sliders, navigation elements and more.
+                Colored, stylish icons can easily be modified and used in a wide variety of projects, as they contain
+                original layers. Glyphs are also available in psd, html/css and svg formats.</p>
+
+
+            <div>
+                {% if site.owner.disqus-shortname and page.comments == true %}
+                <div id="disqus_thread"></div>
+                {% include disqus.html %}
+                {% endif %}
+            </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">

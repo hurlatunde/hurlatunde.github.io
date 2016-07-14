@@ -3,6 +3,7 @@ layout: post
 title:  "Samples will show you the feeling on how to play around using the components in the website building process"
 date:   2016-07-13 13:56:26 +0100
 categories: jekyll update
+comments: true
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

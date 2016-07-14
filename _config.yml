@@ -7,7 +7,6 @@
 
 # Site settings
 title: Your awesome title
-email: hurlatunde@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -17,5 +16,52 @@ url: "http://hurlatunde.github.io" # the base hostname & protocol for your site
 twitter_username: hurlatunde
 github_username:  hurlatunde
 
-# Build settings
-markdown: kramdown
+# Jekyll Build settings configuration
+timezone:          Europe/Paris
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  enable_coderay: false
+
+
+# Site Owner configuration
+owner:
+  username: Hurlatunde
+  name: Olatunde Owokoniran
+  avatar: avatar.jpg
+  job: "Your job"
+  bio: "Write about yourself"
+  email: hurlatunde@gmail.com
+  disqus-shortname: hurlatundegithubio
+  twitter:
+  facebook:
+  google:
+    plus:
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username

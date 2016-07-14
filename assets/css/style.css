@@ -21843,3 +21843,19 @@ hr {
 .mcontent .blog-4 h3 a {
     color: #2c3e50;
 }
+
+.mcontent .contacts-4 {
+    background: #34495e url('../img/map.jpg') 50% 50% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #bdc3c7;
+    text-align: right;
+    padding-top: 175px;
+    padding-bottom: 180px;
+}
+.heart-icon {
+    color: #f83e4b;
+    text-shadow: 0 0 5px #fff, 0 0 10px #f83e4b;
+}
