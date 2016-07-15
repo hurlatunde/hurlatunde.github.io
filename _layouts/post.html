@@ -112,14 +112,12 @@ layout: default
                     <div class="tags">
                         <h6>TAGS</h6>
                         <ul>
-                            <li><a href="#">design</a></li>
-                            <li><a href="#">web design</a></li>
-                            <li><a href="#">tutorials</a></li>
-                            <li><a href="#">thoughts</a></li>
+                            {% for post in site.tags %}
+                            <li><a href="#">{{ post.tag }}</a></li>
+                            {% endfor %}
                         </ul>
                     </div>
                     <div class="comments">
-                        <h6>COMMENTS</h6>
                         <a href="#"> <a href="{{ post.url }}#disqus_thread"></a> </a>
                     </div>
                 </div>

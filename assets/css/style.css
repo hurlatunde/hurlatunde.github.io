@@ -2011,7 +2011,8 @@ body {
 }
 
 .mcontent .blog-1 p {
-    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .mcontent .blog-1 p + p {

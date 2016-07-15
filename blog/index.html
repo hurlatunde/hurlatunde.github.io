@@ -10,6 +10,28 @@ permalink: /blog/
         padding-top: 0px ! important;
         position: relative;
     }
+
+    .post-image-feature
+    {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        margin: 10px;
+        position: relative;
+    }
+    .post-image-feature img {
+        position: absolute;
+        margin: auto;
+        min-height: 100%;
+        min-width: 100%;
+
+        /* For the following settings we set 100%, but it can be higher if needed
+        See the answer's update */
+        left: -100%;
+        right: -100%;
+        top: -100%;
+        bottom: -100%;
+    }
 </style>
 
 
@@ -23,6 +45,21 @@ permalink: /blog/
                     <div>
                         {% for post in site.posts %}
                         <div>
+                            {% if post.image.feature %}
+                            <div class="hide post-image-feature">
+                                <img src=
+                                             {% if post.image.feature contains 'http' %}
+                                "{{ post.image.feature }}"
+                                {% else %}
+                                "{{ site.url }}/img/{{ post.image.feature }}"
+                                {% endif %}
+                                alt="{{ post.title }} feature image">
+
+                                {% if post.image.credit %}
+                                <span class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
+                                {% endif %}
+                            </div><!-- /.image-wrap -->
+                            {% endif %}
                             <h3 style="font-size: 25px;font-weight: 700;"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
                             <div class="promo" style="    margin: -20px 0 27px;">
                                 <h4 style="font-weight: 400;font-size: 15px;">{{ post.date | date: "%b %-d, %Y" }}</h4>
