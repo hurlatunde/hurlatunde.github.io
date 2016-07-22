@@ -11,14 +11,14 @@ permalink: /blog/
         position: relative;
     }
 
-    .post-image-feature
-    {
+    .post-image-feature {
         width: 200px;
         height: 200px;
         overflow: hidden;
         margin: 10px;
         position: relative;
     }
+
     .post-image-feature img {
         position: absolute;
         margin: auto;
@@ -42,6 +42,7 @@ permalink: /blog/
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
+
                     <div>
                         {% for post in site.posts %}
                         <div>
@@ -56,17 +57,28 @@ permalink: /blog/
                                 alt="{{ post.title }} feature image">
 
                                 {% if post.image.credit %}
-                                <span class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
+                                <span class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{
+                                    post.image.credit }}</a></span>
                                 {% endif %}
                             </div><!-- /.image-wrap -->
                             {% endif %}
-                            <h3 style="font-size: 25px;font-weight: 700;"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                            <div>
+                                <h3 style="font-size: 25px;font-weight: 700;margin: 0 0 30px">
+                                    <a class="post-link"  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                                </h3>
+                            </div>
                             <div class="promo" style="    margin: -20px 0 27px;">
-                                <h4 style="font-weight: 400;font-size: 15px;">{{ post.date | date: "%b %-d, %Y" }}</h4>
-                                <p class="hide">The samples consist of a set of 25 pages.</p>
+                                <p style="margin-bottom: 10px;line-height: 23px;"> {{ post.excerpt }} </p>
+                                <h4 style="font-weight: 400;font-size: 12px;color: #bdc3c7;">{{ post.date | date: "%b
+                                    %-d, %Y" | upcase }}</h4>
+                            </div>
+                            <div>
+
                             </div>
                             <hr>
-                            <p class="hide"><button class="btn btn-inverse">Learn more</button></p>
+                            <p class="hide">
+                                <button class="btn btn-inverse">Learn more</button>
+                            </p>
                         </div>
                         {% endfor %}
                     </div>

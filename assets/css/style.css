@@ -22248,7 +22248,7 @@ pre code span {
 .reddit:visited { color: #fff; border-color: #5f99cf; }
 .reddit:hover { background-color: #fff; color: #5f99cf; border-color: #5f99cf; }
 
-.btn {
+ul li .btn {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 2px;
@@ -22265,4 +22265,12 @@ pre code span {
     position: absolute;
     top: -17px;
     left: -14px;
+}
+
+pre code {
+    background: transparent;
+    white-space: pre;
+    overflow: auto;
+    word-wrap: normal;
+    color: #bcb6b6;
 }

@@ -90,6 +90,26 @@ layout: default
         -moz-border-radius: 2px;
         border-radius: 2px;
     }
+    .share-buttons {
+        padding-top: 1em;
+        padding-bottom: 2em;
+        border-top: 0px solid #ddd;
+    }
+    .mcontent .blog-1 .title {
+        margin-bottom: 56px;
+        padding: 88px 0 76px;
+        border-bottom: 2px solid #ebedee;
+        text-align: center;
+    }
+
+    ul li a {
+        font-size: 17px;
+        margin-bottom: 5px;
+        font-weight: 700;
+        display: block;
+    }
+
+
 </style>
 
 <div>
@@ -110,10 +130,18 @@ layout: default
             <div class="row">
                 <div class="col-sm-3 links">
                     <div class="tags">
+                        <h6>CATEGORIES</h6>
+                        <ul>
+                            {% for p in page.categories %}
+                            <li><a href="{{ p.url }}">{{ p }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="tags">
                         <h6>TAGS</h6>
                         <ul>
-                            {% for post in site.tags %}
-                            <li><a href="#">{{ post.tag }}</a></li>
+                            {% for tag in page.tags %}
+                            <li>{{ tag }}</li>
                             {% endfor %}
                         </ul>
                     </div>
@@ -162,19 +190,19 @@ layout: default
                     <hr>
 
                     <div class="row">
-                        {% if page.previous.url %}
                         <div class="links col-sm-6">
+                            {% if page.previous.url %}
                             <h6>previous article</h6>
                             <a href="{{ page.previous.url }}"> {{ page.previous.title }} </a>
+                            {% endif %}
                         </div>
-                        {% endif %}
 
-                        {% if page.next.url %}
                         <div class="links next col-sm-6">
+                            {% if page.next.url %}
                             <h6>Next article</h6>
                             <a href="{{ page.next.url }}"> {{ page.next.title }} </a>
+                            {% endif %}
                         </div>
-                        {% endif %}
                     </div>
 
                     <br>
