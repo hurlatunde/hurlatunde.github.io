@@ -98,12 +98,19 @@ layout: default
         line-height: 38px;
         font-weight: 300;
     }
+
     .q_style {
         position: absolute;
         display: block ! important;
         bottom: 10px;
-        right: 40px;
+        right: 24px;
         z-index: 999;
+    }
+
+    .header-4 {
+        background-image: -webkit-linear-gradient(45deg, #691657 0%, #e87330 55%, #fdc45c 100%);
+        background-image: linear-gradient(45deg, #691657 0%, #e87330 55%, #fdc45c 100%);
+        box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1);
     }
 
 </style>
@@ -116,14 +123,12 @@ layout: default
                     <div class="col-sm-8">
                         <div class="hero-unit">
                             <h1>Hello. I'm Olatunde Owokoniran,</h1>
-                            <p class="hide" style="font-size: 19px;"> <small>PHP junkie Android Enthusiast • Drummer • Husband • Dad •</small> </p>
                             <p>A creative developer/designer focused on building awesome projects.</p>
                             <p>Take a look. </p>
-                            <!--Android Enthusiast • Drummer • Husband • Dad •-->
                         </div>
 
                         <div class="nav-steps">
-                            <a href="#" class="active"> @Hurlatunde </a>
+                            <a href="https://twitter.com/hurlatunde/" target="_blank" class="active"> @hurlatunde </a>
                             <div class="steps-selectors">
                                 <a href="#" class="active">/</a>
                                 <a href="#">/</a>
@@ -141,23 +146,14 @@ layout: default
             </div>
         </div>
         <div class="q_style">
-            <p style="font-size: 12px;"> DEVELOPER &bull; DESIGNER &bull; FREELANCER </p>
+            <p class="btn_style" style="font-size: 12px;border-radius: 0.25em;"> DEVELOPER &bull; DESIGNER &bull; FREELANCER </p>
         </div>
+
+        <p class="btn_style" style="font-size: 12px;">
+            &copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. made with <i class="fa fa-heart heart-icon"></i>
+            by ME
+        </p>
+
     </div>
+    <div class="octoverse-map"></div>
 </header>
-
-<!--<div class="home">-->
-<!--<h1 class="page-heading">Posts</h1>-->
-<!--<ul class="post-list">-->
-<!--{% for post in site.posts %}-->
-<!--<li>-->
-<!--<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>-->
-
-<!--<h2>-->
-<!--<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>-->
-<!--</h2>-->
-<!--</li>-->
-<!--{% endfor %}-->
-<!--</ul>-->
-<!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
-<!--</div>-->

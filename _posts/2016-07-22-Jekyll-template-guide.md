@@ -43,7 +43,7 @@ The table below lists the available settings for Jekyll, and the various `option
 
 read more about settings - [jekyllrb configuration](https://jekyllrb.com/docs/configuration/)
 
-## jekyllrb Templates
+## jekyll Templates
 
 Jekyll uses the Liquid templating language to process templates. All of the standard Liquid tags and filters are supported. Jekyll even adds a few handy filters and tags of its own to make common tasks easier.
 
@@ -52,7 +52,6 @@ Jekyll uses the Liquid templating language to process templates. All of the stan
 <div class="embed-responsive embed-responsive-16by9">
 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7-7W2sKhnyc" frameborder="0" allowfullscreen></iframe>
 </div>
-
 
 #### Read more:
 * [Jekyll cheat](http://jekyll.tips/jekyll-cheat-sheet/)
