@@ -1,0 +1,75 @@
+---
+layout: default
+title: Get in touch
+permalink: /contact_me/
+---
+
+<style>
+    body {
+        padding-top: 0px ! important;
+        position: relative;
+    }
+
+    .av {
+        font-size: 13px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 1.2;
+        color: #95a5a6;
+    }
+</style>
+
+<div>
+
+    <header class="header-21">
+        <div class="container">
+            <div class="row">
+                <div class="navbar col-sm-12" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle"></button>
+                        <a class="brand hide" href="#"></a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav">
+                            {% for my_page in site.pages %}
+                            {% if my_page.title %}
+                            <li><a href="{{ my_page.url | prepend: site.baseurl }}"> {{ my_page.title }}</a> </li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contacts-4">
+        <div class="container">
+            <div class="content">
+                <div class="social-btns">
+                    <a href="http://twitter.com/hurlatunde">
+                        <div class="fui-twitter"></div>
+                        <div class="fui-twitter"></div>
+                    </a>
+                    <a href="http://facebook.com/olatunde.owokoniran">
+                        <div class="fui-facebook"></div>
+                        <div class="fui-facebook"></div>
+                    </a>
+                    <a href="http://google.com/olatunde">
+                        <div class="fui-google"></div>
+                        <div class="fui-google"></div>
+                    </a>
+                </div>
+                <h3>Get in touch with me</h3>
+                <p style="font-size: 20px;margin-left: 48%;">For every single project that I have done my focus has been on creating the best user experience possible.
+                    <br class="hidden-phone"> I've worked on several larger projects as well as brands and I love challenges.</p>
+                <div class="links">
+                    <a href="malito">hurlatunde@gmail.com</a>
+                    <p class="av">AVAILABLE AT 9AM - 18PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include footer.html %}
+</div>

@@ -11,6 +11,28 @@ permalink: /portfolio/
     }
 </style>
 
+
+<header class="header-21">
+    <div class="container">
+        <div class="row">
+            <div class="navbar col-sm-12" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle"></button>
+                    <a class="brand hide" href="#"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav">
+                        {% for my_page in site.pages %}
+                        {% if my_page.title %}
+                        <li><a href="{{ my_page.url | prepend: site.baseurl }}"> {{ my_page.title }}</a> </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <div>
     <section class="projects-1">
         <div class="container">

@@ -47,7 +47,7 @@ permalink: /blog/
                         {% for post in site.posts %}
                         <div>
                             {% if post.image.feature %}
-                            <div class=" post-image-feature">
+                            <div class="hide post-image-feature">
                                 <img src=
                                              {% if post.image.feature contains 'http' %}
                                 "{{ post.image.feature }}"
@@ -64,18 +64,19 @@ permalink: /blog/
                             {% endif %}
                             <div>
                                 <h3 style="font-size: 25px;font-weight: 700;margin: 0 0 30px">
-                                    <a class="post-link"  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title
+                                        }}</a>
                                 </h3>
                             </div>
                             <div class="promo" style="    margin: -20px 0 27px;">
-                                <p style="margin-bottom: 10px;line-height: 23px;"> {{ post.excerpt }} </p>
-                                <h4 style="font-weight: 400;font-size: 12px;color: #bdc3c7;">{{ post.date | date: "%b
+                                <p style="margin-bottom: 20px;line-height: 23px;font-size: 18px;"> {{ post.excerpt }} </p>
+                                <h4 style="font-weight: 400;font-size: 15px;color: #bdc3c7;">{{ post.date | date: "%b
                                     %-d, %Y" | upcase }}</h4>
                             </div>
                             <div>
 
                             </div>
-                            <hr>
+                            <!--<hr>-->
                             <p class="hide">
                                 <button class="btn btn-inverse">Learn more</button>
                             </p>
@@ -85,31 +86,32 @@ permalink: /blog/
                 </div>
 
                 <div class="col-sm-3 col-sm-offset-2">
-                    <div class="related-articles">
-                        <h6>Related Articles</h6>
-                        <ul>
-                            <li>
-                                <a href="#">We have considered your needs in developing</a>
-                                <div>Jan 13</div>
-                            </li>
-                            <li>
-                                <a href="#">Some interesting thoughts</a>
-                                <div>Jan 13</div>
-                            </li>
-                            <li>
-                                <a href="#">Flat UI in Web Design. Best examples today</a>
-                                <div>Jan 13</div>
-                            </li>
-                            <li>
-                                <a href="#">We have considered your needs in developing</a>
-                                <div>Jan 13</div>
-                            </li>
-                        </ul>
-                    </div>
+                    <!--<div class="related-articles">-->
+                        <!--<h6>Related Articles</h6>-->
+                        <!--<ul>-->
+                            <!--<li>-->
+                                <!--<a href="#">We have considered your needs in developing</a>-->
+                                <!--<div>Jan 13</div>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="#">Some interesting thoughts</a>-->
+                                <!--<div>Jan 13</div>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="#">Flat UI in Web Design. Best examples today</a>-->
+                                <!--<div>Jan 13</div>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="#">We have considered your needs in developing</a>-->
+                                <!--<div>Jan 13</div>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>
     </section>
+
 
     {% include footer.html %}
 </div>
