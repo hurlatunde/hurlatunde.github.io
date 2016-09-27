@@ -1,0 +1,161 @@
+---
+layout: default
+title: Articles
+sub_title: I'm not just a boring developer, I like writing as well. Mostly about development best practices and how to go about things
+---
+
+<style>
+    body {
+        padding-top: 0px ! important;
+        position: relative;
+    }
+
+    .post-image-feature {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        margin: 10px;
+        position: relative;
+    }
+
+    .post-image-feature img {
+        position: absolute;
+        margin: auto;
+        min-height: 100%;
+        min-width: 100%;
+
+        /* For the following settings we set 100%, but it can be higher if needed
+        See the answer's update */
+        left: -100%;
+        right: -100%;
+        top: -100%;
+        bottom: -100%;
+    }
+
+    .post-set {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 34px;
+        padding: 24px;
+        background: #fff;
+    }
+
+    .post-set:last-child {
+        border-bottom: 0px solid #ddd;
+    }
+
+    .mcontent .blog-4 h3 a {
+        color: #2c3e50;
+        letter-spacing: -1px;
+        font-size: 32px ! important;
+    }
+
+    .mcontent .blog-4 .tags {
+        text-align: left;
+        margin: 8px 0;
+        font-size: 11px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        color: #bdc3c7;
+        padding-left: 0px;
+    }
+    .mcontent .blog-4 .tags li {
+        display: inline-block;
+        margin-right: 12px;
+    }
+
+</style>
+
+
+<div>
+    {% include header.html %}
+
+    <section class="blog-2 blog-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8 col-md-offset-2">
+                    <div>
+                        {% for post in paginator.posts %}
+                        <div class="post-set">
+                            {% if post.image.feature %}
+                            <div class="hide post-image-feature">
+                                <img src=
+                                             {% if post.image.feature contains 'http' %}
+                                "{{ post.image.feature }}"
+                                {% else %}
+                                "{{ site.url }}/img/{{ post.image.feature }}"
+                                {% endif %}
+                                alt="{{ post.title }} feature image">
+
+                                {% if post.image.credit %}
+                                <span class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{
+                                    post.image.credit }}</a></span>
+                                {% endif %}
+                            </div><!-- /.image-wrap -->
+                            {% endif %}
+                            <div>
+                                <h4 style="font-weight: 100;font-size: 11px;color: #333;margin: 0;letter-spacing: 1px;text-align: right;">
+                                    {{ post.date | date: "%b %-d, %Y" | upcase }}
+                                </h4>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 25px;font-weight: 200;margin: 0 0 30px">
+                                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title
+                                        }}</a>
+                                </h3>
+                            </div>
+                            <div class="promo" style="margin: -20px 0 8px;">
+                                <p style="margin-bottom: 20px;line-height: 23px;font-size: 16px;font-weight: 300;"> {{
+                                    post.excerpt }} </p>
+                                <ul class="tags">
+                                    <li><i class="fa fa-tags" aria-hidden="true"></i></li>
+                                    {% for tag in post.tags %}
+                                    <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+
+                            <!--<hr>-->
+                            <p class="hide">
+                                <button class="btn btn-inverse">Learn more</button>
+                            </p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+
+            {% if paginator.total_pages > 1 %}
+            <div class="pagination text-center" style="    display: block;">
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+                {% else %}
+                <span>&laquo; Prev</span>
+                {% endif %}
+
+                {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                <em>{{ page }}</em>
+                {% elsif page == 1 %}
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                {% else %}
+                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                {% endif %}
+                {% endfor %}
+
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+                {% else %}
+                <span>Next &raquo;</span>
+                {% endif %}
+            </div>
+            {% endif %}
+
+        </div>
+    </section>
+
+    {% include footer.html %}
+</div>

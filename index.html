@@ -89,6 +89,7 @@ layout: default
         line-height: 63px;
         font-weight: 800;
     }
+
     .mcontent .header-4 .hero-unit h1 {
         margin: 0 0 17px;
         font-size: 53px;
@@ -97,7 +98,6 @@ layout: default
         line-height: 51px;
         font-weight: 400;
     }
-
 
     .mcontent .header-4 .hero-unit p {
         font-size: 28px;
@@ -132,6 +132,12 @@ layout: default
     }
 
 </style>
+
+<a target="_blank" href="https://github.com/hurlatunde">
+    <img style="position: absolute; top: 0; right: 0; border: 0;z-index: 999;" src="assets/img/fork.png" alt="Fork me on GitHub">
+</a>
+
+
 <header class="header-4 v-center bg-midnight-blue" style="background-color: #1c201d;">
     <div class="background landing_background">&nbsp;</div>
     <div class="parent_element">
@@ -141,19 +147,27 @@ layout: default
                     <div class="col-sm-8">
                         <div class="hero-unit">
                             <h1>
-                                <small style="font-size: 46%;">Hello. I'm</small> <br>
-                                Olatunde Owokoniran,</h1>
-                            <p>A creative developer/designer focused on building awesome projects. Software developer at <a href="initsng.com" target="_blank"  style="font-weight: 300;"    >Inits Limited</a> </p>
+                                <small style="font-size: 46%;">Hello. I'm</small>
+                                <br>
+                                Olatunde Owokoniran,
+                            </h1>
+                            <p>A creative software developer/designer focused on building awesome projects. Backend-End developer at
+                                <a href="initsng.com" target="_blank" style="font-weight: 300;">Inits Limited</a></p>
                             <p>Love to design products like apps and websites and to create creative solutions.</p>
                         </div>
 
                         <div class="nav-steps">
-                            <!--<a href="https://twitter.com/hurlatunde/" target="_blank" class="active"> @hurlatunde </a>-->
-                            {% for my_page in site.pages %}
-                            {% if my_page.title %}
-                            <a href="{{ my_page.url | prepend: site.baseurl }}"> &nbsp; / &nbsp; {{ my_page.title }}</a>
-                            {% endif %}
-                            {% endfor %}
+
+                            <a href="https://twitter.com/hurlatunde/" target="_blank" class="active"> @hurlatunde  &nbsp;&nbsp;&nbsp;/ </a>
+                            <!--{% for my_page in site.pages %}-->
+                            <!--{% if my_page.title %}-->
+                            <!--<a href="{{ my_page.url | prepend: site.baseurl }}"> &nbsp; / &nbsp; {{ my_page.title }}</a>-->
+                            <!--{% endif %}-->
+                            <!--{% endfor %}-->
+
+                            <a href="/articles/"> &nbsp; Articles </a>
+                            <!--<a href="/portfolio/"> &nbsp; / &nbsp;Portfolio </a>-->
+
                         </div>
                     </div>
                 </div>
@@ -161,12 +175,12 @@ layout: default
         </div>
 
         <!--<div class="q_style">-->
-            <!--<p class="btn_style" style="font-size: 12px;border-radius: 0.25em;"> DEVELOPER &bull; DESIGNER &bull; FREELANCER </p>-->
+        <!--<p class="btn_style" style="font-size: 12px;border-radius: 0.25em;"> DEVELOPER &bull; DESIGNER &bull; FREELANCER </p>-->
         <!--</div>-->
 
         <!--<p class="btn_style" style="font-size: 12px;">-->
-            <!--&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. made with <i class="fa fa-heart heart-icon"></i>-->
-            <!--by ME-->
+        <!--&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. made with <i class="fa fa-heart heart-icon"></i>-->
+        <!--by ME-->
         <!--</p>-->
 
     </div>

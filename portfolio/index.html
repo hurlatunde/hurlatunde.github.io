@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Portfolio
+sub_title: Showcase of some of the works have done in the past.
 permalink: /portfolio/
 ---
 
@@ -12,44 +13,13 @@ permalink: /portfolio/
 </style>
 
 
-<header class="header-21">
-    <div class="container">
-        <div class="row">
-            <div class="navbar col-sm-12" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle"></button>
-                    <a class="brand hide" href="#"></a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav">
-                        {% for my_page in site.pages %}
-                        {% if my_page.title %}
-                        <li><a href="{{ my_page.url | prepend: site.baseurl }}"> {{ my_page.title }}</a> </li>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+{% include header.html %}
+
+
 <div>
     <section class="projects-1">
         <div class="container">
-            <div class="title hide">
-                <a href="#">web design</a>
-                <a href="#" class="active">graphic design</a>
-                <a href="#">product design</a>
-                <a href="#">ios development</a>
-                <a href="#">web development</a>
-            </div>
-            <div class="head-box">
-                <div class="brand">
-                    {{ page.title }}
-                </div>
-                <p>Responsive web design is a web design approach aimed at crafting sites.</p>
-            </div>
-            <div class="projects">
+            <div class="projects" style="    margin-top: 0px;">
                 <div class="project-wrapper">
                     <div class="project">
                         <div class="photo-wrapper">

@@ -1,27 +1,27 @@
-# Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-title: Your awesome title
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+###################################
+# Site wide configuration
+####################################
+#
+title:       "Leonids Jekyll theme"
+description: "Clean Jekyll blog theme called Leonids."
+url:         # the base hostname & protocol for your site
 url: "http://hurlatunde.github.io" # the base hostname & protocol for your site
 twitter_username: hurlatunde
 github_username:  hurlatunde
 
-# Jekyll Build settings configuration
+#
+###################################
+# Jekyll configuration
+####################################
+#
 timezone:          Europe/Paris
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
 permalink:         /articles/:year-:month/:title
+paginate_path: "/articles/page:num/"
+paginate: 10
 
 kramdown:
   auto_ids:       true
@@ -30,17 +30,15 @@ kramdown:
   toc_levels:     1..6
   enable_coderay: false
 
-
 # Site Owner configuration
 owner:
   username: Hurlatunde
   name: Hurlatunde
   avatar: https://z-1-scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/13612349_10205524814554405_7966782029174826798_n.jpg?oh=ccadbbd56049737eb7f3e887f1eb5235&oe=58280D54
-  job: "Software Develper"
+  job: "Backend-End Developer"
   bio: "Write about yourself"
   email: hurlatunde@gmail.com
   disqus-shortname: hurlatundegithubio
-  twitter: @hurlatunde
   facebook: https://www.facebook.com/Olatunde.owokoniran
   google:
     plus:
@@ -49,11 +47,11 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: hurlatunde
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username
-  instagram: #username
+  instagram: hurlatunde
   lastfm: #username
   tumblr: #username
   pinterest: #username
@@ -65,3 +63,6 @@ owner:
   weibo: #username
   flickr: #username
   codepen: #username
+
+# Gems
+gems: [jekyll-paginate]
