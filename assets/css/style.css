@@ -3,6 +3,13 @@
     border-top-color: #34495e !important;
 }
 
+@font-face {
+    font-family: "Romana";
+    url("../fonts/romana.woff2") format("woff"),
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* styles from flat-ui-free2.0.0-fix.less files */
 body {
     color: #34495e;
