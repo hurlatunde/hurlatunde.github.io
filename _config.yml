@@ -3,9 +3,8 @@
 # Site wide configuration
 ####################################
 #
-title:       "Leonids Jekyll theme"
-description: "Clean Jekyll blog theme called Leonids."
-url:         # the base hostname & protocol for your site
+title:       "Hurlatunde Blogs"
+description: "Creating the world of me, with each line of code."
 url: "http://hurlatunde.github.io" # the base hostname & protocol for your site
 twitter_username: hurlatunde
 github_username:  hurlatunde
@@ -15,7 +14,7 @@ github_username:  hurlatunde
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
+timezone:          Africa/Nigeria
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -36,7 +35,7 @@ owner:
   name: Hurlatunde
   avatar: https://z-1-scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/13612349_10205524814554405_7966782029174826798_n.jpg?oh=ccadbbd56049737eb7f3e887f1eb5235&oe=58280D54
   job: "Backend-End Developer"
-  bio: "Write about yourself"
+  bio: "Creating the world of me, with each line of code."
   email: hurlatunde@gmail.com
   disqus-shortname: hurlatundegithubio
   facebook: https://www.facebook.com/Olatunde.owokoniran
