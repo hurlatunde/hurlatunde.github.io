@@ -4,25 +4,48 @@
 }
 
 @font-face {
-    font-family: "Romana";
-    url("../fonts/romana.woff2") format("woff"),
-    font-weight: normal;
+    font-family: "museo sans";
+url("../fonts/museo-sans/MuseoSansCyrl.otf") format("otf"), font-weight: normal;
     font-style: normal;
 }
 
-/* styles from flat-ui-free2.0.0-fix.less files */
+@font-face {
+    font-family: "museo sans";
+url("../fonts/museo-sans/MuseoSansCyrl_300.otf") format("otf"), font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "museo sans";
+url("../fonts/museo-sans/MuseoSansCyrl_500.otf") format("otf"), font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "museo sans";
+url("../fonts/museo-sans/MuseoSansCyrl_700.otf") format("otf"), font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "museo sans";
+url("../fonts/museo-sans/MuseoSansCyrl_900.otf") format("otf"), font-weight: 900;
+    font-style: normal;
+}
+
 body {
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.231;
+    font-weight: 300;
 }
 
 input,
 button,
 select,
 textarea {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -96,7 +119,6 @@ h2 {
 
 h3 {
     font-weight: 700;
-    margin-bottom: 4px;
     margin-top: 2px;
 }
 
@@ -114,12 +136,8 @@ h6 {
 }
 
 p {
-    font-size: 18.004px;
-    /* 18px */
-
-    line-height: 1.722169;
-    /* 31px */
-
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .lead {
@@ -427,12 +445,6 @@ body {
     height: 100%;
 }
 
-body {
-    overflow-x: hidden;
-    color: #7f8c8d;
-    line-height: 1.29;
-}
-
 @media (max-width: 767px) {
     body {
         padding-right: 0;
@@ -633,7 +645,7 @@ h5,
 .h5,
 h6,
 .h6 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     color: #2c3e50;
 }
 
@@ -665,7 +677,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
@@ -954,7 +966,7 @@ header .brand {
     font-size: 25px;
     font-weight: normal;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
     letter-spacing: -1px;
     color: #2c3e50;
@@ -1866,7 +1878,7 @@ body {
 
 .mcontent .blog-1 .page-transitions .hero-unit p {
     font-size: 20px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: normal;
     line-height: normal;
 }
@@ -1942,7 +1954,7 @@ body {
 
 .mcontent .blog-1 .title .submitted {
     font-size: 12px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.19em;
@@ -1969,7 +1981,7 @@ body {
 .mcontent .blog-1 .links,
 .mcontent .blog-1 .links * {
     font-size: 12px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.19em;
@@ -2135,7 +2147,7 @@ body {
     padding-bottom: 200px;
     position: relative;
     background-color: #ecf0f1;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     color: #35495d;
 }
 
@@ -2150,7 +2162,7 @@ body {
     margin: 0 0 20px;
     font-size: 35px;
     font-weight: 500;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     letter-spacing: -1px;
 }
 
@@ -2162,7 +2174,7 @@ body {
 .mcontent .blog-2 h4 {
     margin: 0 0 24px;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-size: 30px;
     letter-spacing: -1px;
     font-weight: 300;
@@ -2264,7 +2276,7 @@ body {
 
 .mcontent .blog-3 h6 {
     font-size: 20px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     margin: 0 0 25px;
     text-transform: none;
@@ -2328,7 +2340,7 @@ body {
     margin-bottom: 35px;
     font-size: 37px;
     line-height: 50px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     color: #2c3e50;
     letter-spacing: -1px;
     font-weight: 300;
@@ -2360,7 +2372,7 @@ body {
 .mcontent .blog-3 .links,
 .mcontent .blog-3 .links * {
     font-size: 13px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -2377,7 +2389,7 @@ body {
 .mcontent .blog-3 .links a {
     color: #1abc9c;
     font-size: 20px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: none;
     letter-spacing: normal;
@@ -2410,7 +2422,7 @@ body {
 
 .mcontent .blog-4 h6 {
     font-size: 20px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     margin: 0 0 25px;
     text-transform: none;
@@ -2446,7 +2458,7 @@ body {
     margin: 60px 0 55px 40px;
     font-size: 37px;
     line-height: 50px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     color: #2c3e50;
     font-weight: 300;
     letter-spacing: -1px;
@@ -2469,7 +2481,7 @@ body {
 .mcontent .blog-4 .tags {
     margin-top: 70px;
     font-size: 12px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.19em;
@@ -2513,7 +2525,7 @@ body {
 
 .mcontent .blog-4 .related-articles h6 {
     font-size: 19px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     margin: 0 0 30px;
 }
@@ -2643,7 +2655,7 @@ body {
 
 .mcontent .blog-5 .page-transitions .hero-unit p {
     font-size: 20px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: normal;
     line-height: normal;
 }
@@ -2692,7 +2704,7 @@ body {
 
 .mcontent .blog-5 .title .submitted {
     font-size: 12px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.19em;
@@ -2753,7 +2765,7 @@ body {
     color: #2c3e50;
     background: #f5f6f6;
     font-size: 30px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     text-align: center;
     letter-spacing: -1px;
 }
@@ -2770,7 +2782,7 @@ body {
     font-size: 18px;
     font-weight: 500;
     color: #2980b9;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     letter-spacing: 0;
 }
 
@@ -2889,7 +2901,7 @@ body {
 
 .mcontent .blog-5 .tags {
     font-size: 12px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.19em;
@@ -2941,7 +2953,7 @@ body {
 .mcontent .contacts-1 h6,
 .mcontent .contacts-1 .h6 {
     margin: 0 0 12px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-size: 18px;
     text-transform: none;
@@ -3031,7 +3043,7 @@ body {
 
 .mcontent .contacts-1 .phone {
     font-size: 13px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 700;
     letter-spacing: 2px;
     line-height: 1.2;
@@ -3093,7 +3105,7 @@ body {
 .mcontent .contacts-2 h6,
 .mcontent .contacts-2 .h6 {
     margin: 0 0 15px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-size: 18px;
     text-transform: none;
@@ -3237,7 +3249,7 @@ body {
 .mcontent .contacts-3 h6,
 .mcontent .contacts-3 .h6 {
     margin: 0 0 15px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-size: 18px;
     text-transform: none;
@@ -3439,7 +3451,7 @@ body {
 .mcontent .contacts-4 .links {
     margin: 35px 0 0;
     font-size: 47px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 700;
     word-break: break-all;
 }
@@ -3522,7 +3534,7 @@ body {
     font-size: 34px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-bottom: 24px;
 }
 
@@ -3530,7 +3542,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .content-1 .box-video {
@@ -3538,21 +3550,21 @@ body {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .content-1 .box-video p {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .content-1 .box-video h6 {
     font-size: 20px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     text-transform: none;
 }
 
@@ -3711,7 +3723,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-bottom: 35px;
     font-weight: 300;
 }
@@ -3720,7 +3732,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     line-height: 29.999999999999996px;
 }
 
@@ -3787,7 +3799,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     margin-bottom: 24px;
 }
@@ -3796,7 +3808,7 @@ body {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     line-height: 29.999999999999996px;
 }
 
@@ -3894,7 +3906,7 @@ body {
     font-size: 20px;
     font-weight: normal;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: none;
 }
@@ -3938,7 +3950,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-bottom: 24px;
     font-weight: 300;
 }
@@ -3947,7 +3959,7 @@ body {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     line-height: 26px;
 }
 
@@ -3956,7 +3968,7 @@ body {
     font-size: 24px;
     font-weight: normal;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: none;
 }
@@ -4016,7 +4028,7 @@ body {
     font-size: 35px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     text-align: center;
 }
 
@@ -4030,7 +4042,7 @@ body {
     font-size: 25px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     text-align: center;
 }
@@ -4079,7 +4091,7 @@ body {
     font-size: 22px;
     font-weight: normal;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     margin-bottom: 14px;
     text-transform: none;
@@ -4104,7 +4116,7 @@ body {
     font-size: 35px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .content-6 h3 img {
@@ -4132,7 +4144,7 @@ body {
     font-size: 25px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 
@@ -4210,7 +4222,7 @@ body {
     font-size: 22px;
     font-weight: normal;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     margin-bottom: 14px;
     text-transform: none;
@@ -4228,7 +4240,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-bottom: 80px;
     line-height: 42px;
     font-weight: 800;
@@ -4323,7 +4335,7 @@ body {
     font-size: 22px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     line-height: 32px;
     font-weight: 300;
 }
@@ -4385,7 +4397,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin: 70px 0 35px;
 }
 
@@ -4415,7 +4427,7 @@ body {
     font-weight: normal;
     color: #7f8c8d;
     font-weight: 500;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     padding: 12px 28px 12px;
     color: #e74c3c;
 }
@@ -4497,7 +4509,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-bottom: 24px;
     font-weight: 300;
 }
@@ -4514,7 +4526,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -4603,7 +4615,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-bottom: 48px;
     font-weight: 300;
 }
@@ -4641,7 +4653,7 @@ body {
     font-size: 22px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 15px;
@@ -4663,7 +4675,7 @@ body {
     font-size: 24px;
     font-weight: normal;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 
@@ -4717,7 +4729,7 @@ body {
     text-align: center;
     font-size: 40px;
     font-weight: normal;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     color: #7f8c8d;
     background: #1abc9c;
     font-weight: 300;
@@ -4808,7 +4820,7 @@ body {
     font-size: 50px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     letter-spacing: -1px;
 }
@@ -4873,7 +4885,7 @@ body {
     font-size: 50px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .content-13.subscribe-form .btn {
@@ -4906,7 +4918,7 @@ body {
         font-size: 25px;
         font-weight: normal;
         color: #ffffff;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "museo sans", Helvetica, Arial, sans-serif;
         text-align: center;
     }
 }
@@ -4939,7 +4951,7 @@ body {
     font-size: 35px;
     font-weight: normal;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -4953,7 +4965,7 @@ body {
     font-size: 25px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     text-align: center;
     font-weight: 300;
 }
@@ -5027,7 +5039,7 @@ body {
     text-transform: none;
     color: #e74c3c;
     font-size: 18px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -5169,7 +5181,7 @@ body {
     font-size: 37px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     line-height: 50px;
     text-align: center;
@@ -5202,7 +5214,7 @@ body {
     font-size: 20px;
     font-weight: normal;
     color: #e74c3c;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -5306,7 +5318,7 @@ body {
     font-size: 25px;
     font-weight: normal;
     color: #bdc3c7;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     margin-bottom: 35px;
 }
@@ -5455,7 +5467,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     line-height: 40px;
 }
@@ -5467,7 +5479,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     color: #bdc3c7;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -5567,7 +5579,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -5613,7 +5625,7 @@ body {
     font-weight: normal;
     color: #2c3e50;
     font-weight: 300;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .content-19 .col-sm-7 .quote .quote-author {
@@ -5621,7 +5633,7 @@ body {
     font-size: 13px;
     font-weight: normal;
     color: #95a5a6;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     letter-spacing: 2px;
     text-transform: capitalize;
 }
@@ -5669,7 +5681,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -5690,7 +5702,7 @@ body {
     font-size: 12px;
     font-weight: normal;
     color: #95a5a6;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.19em;
 }
@@ -5782,7 +5794,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-bottom: 35px;
     line-height: 40px;
     font-weight: 300;
@@ -5854,7 +5866,7 @@ body {
     font-size: 15px;
     font-weight: normal;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .content-20 .signup-form form .form-group {
@@ -6014,7 +6026,7 @@ body {
     font-size: 14px;
     font-weight: normal;
     color: #95a5a6;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .content-20 .features big {
@@ -6022,7 +6034,7 @@ body {
     font-size: 22px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     line-height: 32px;
     margin-bottom: 8px;
@@ -6032,7 +6044,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-top: 38px;
 }
 
@@ -6058,7 +6070,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     text-align: center;
     margin-bottom: 55px;
     font-weight: 300;
@@ -6117,7 +6129,7 @@ body {
     font-size: 12px;
     font-weight: normal;
     color: #bdc3c7;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     letter-spacing: 3px;
     border-left: 2px solid #304357;
     cursor: pointer;
@@ -6209,7 +6221,7 @@ body {
     font-size: 20px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -6267,7 +6279,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin: 40px 0;
     font-weight: 300;
 }
@@ -6283,7 +6295,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: none;
 }
@@ -6292,7 +6304,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     color: #bdc3c7;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-bottom: 50px;
 }
 
@@ -6311,7 +6323,7 @@ body {
     font-size: 14px;
     font-weight: normal;
     color: #bdc3c7;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     position: relative;
     max-width: 220px;
     background: url("../../../common-files/img/content/line-l@2x.png") no-repeat scroll center top / 50% auto rgba(0, 0, 0, 0);
@@ -6485,7 +6497,7 @@ body {
     font-size: 14px;
     font-weight: normal;
     color: #2ecc71;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -6671,7 +6683,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-bottom: 40px;
     font-weight: 300;
 }
@@ -6788,7 +6800,7 @@ body {
     font-size: 14px;
     font-weight: normal;
     color: #2ecc71;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -6853,14 +6865,14 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
 .mcontent .content-25 p {
     font-size: 18px;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-top: 45px;
     font-weight: normal;
 }
@@ -6885,7 +6897,7 @@ body {
     font-size: 22px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     margin-bottom: 0;
 }
@@ -6894,7 +6906,7 @@ body {
     font-size: 35px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     margin: 0 0 36px;
 }
@@ -6908,7 +6920,7 @@ body {
 .mcontent .content-26 .features h6 {
     text-transform: none;
     margin-top: 37px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-size: 18px;
 }
@@ -6948,7 +6960,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     text-align: left;
     margin-bottom: 43px;
     font-weight: 300;
@@ -6958,7 +6970,7 @@ body {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     line-height: 29.6px;
 }
 
@@ -7069,7 +7081,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     padding-bottom: 40px;
     font-weight: 300;
 }
@@ -7102,7 +7114,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     padding-bottom: 40px;
     font-weight: 300;
     text-align: center;
@@ -7194,7 +7206,7 @@ body {
 .mcontent .content-29 .features h6 {
     text-transform: none;
     margin-top: 37px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-size: 18px;
 }
@@ -7283,7 +7295,7 @@ body {
     font-size: 16px;
     font-weight: normal;
     color: #1abc9c;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -7446,7 +7458,7 @@ body {
     color: #fff;
     line-height: 40px;
     font-size: 24px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     -webkit-transition: 0.6s background-color;
     -moz-transition: 0.6s background-color;
@@ -7692,7 +7704,7 @@ body {
     text-align: center;
     background: #f2f2f1;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .content-32 .lead {
@@ -7706,7 +7718,7 @@ body {
     font-size: 35px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     line-height: 40px;
     margin: 0 0 48px;
@@ -7729,7 +7741,7 @@ body {
 
 .mcontent .content-32 .features h6 {
     text-transform: none;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-size: 20px;
     margin: 0 0 20px;
@@ -7749,7 +7761,7 @@ body {
 }
 
 .mcontent .content-33 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     padding-top: 125px;
     padding-bottom: 110px;
 }
@@ -8534,7 +8546,7 @@ body {
     position: absolute;
     z-index: 2;
     top: 45px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -8545,7 +8557,7 @@ body {
 .mcontent .header-1 .navbar .brand {
     font-size: 25px;
     font-weight: normal;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
     color: #ffffff;
 }
@@ -8653,7 +8665,7 @@ body {
     font-weight: normal;
     color: #ffffff;
     font-weight: 300;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-bottom: 0;
 }
 
@@ -8819,7 +8831,7 @@ body {
     position: absolute;
     z-index: 2;
     top: 55px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-2 .navbar.navbar-fixed-top {
@@ -8831,7 +8843,7 @@ body {
     font-weight: normal;
     color: #ffffff;
     font-weight: 800;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-2 .navbar .brand img:first-child {
@@ -8998,7 +9010,7 @@ body {
 .mcontent .header-3 .navbar {
     top: 0;
     margin-top: 10px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-3 .navbar.navbar-fixed-top {
@@ -9098,7 +9110,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-bottom: 20px;
     font-weight: 300;
 }
@@ -9107,7 +9119,7 @@ body {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     line-height: 1.9;
 }
 
@@ -9183,7 +9195,7 @@ body {
     margin: 0 0 35px;
     padding: 0;
     background: transparent;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-4 .hero-unit h1 {
@@ -9270,7 +9282,7 @@ body {
     position: absolute;
     z-index: 2;
     top: 60px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-5 .navbar.navbar-fixed-top {
@@ -9340,7 +9352,7 @@ body {
     font-size: 20px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     text-align: center;
     line-height: 25px;
     background: none;
@@ -9378,7 +9390,7 @@ body {
     font-size: 40px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     white-space: nowrap;
     opacity: 20;
     filter: alpha(opacity=2000);
@@ -9644,7 +9656,7 @@ body {
     font-size: 20px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     line-height: normal;
 }
 
@@ -9719,7 +9731,7 @@ body {
 .mcontent .header-6 .navbar {
     position: absolute;
     z-index: 2;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     top: -50px;
     opacity: 0;
     filter: alpha(opacity=0);
@@ -9913,7 +9925,7 @@ body {
     font-weight: normal;
     color: rgba(255, 255, 255, 0.7);
     font-weight: 300;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-6-sub .container > .row:first-child {
@@ -10148,7 +10160,7 @@ body {
 .mcontent .header-7-sub .h5,
 .mcontent .header-7-sub h6,
 .mcontent .header-7-sub .h6 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     color: white;
 }
 
@@ -10308,7 +10320,7 @@ body {
     font-size: 25px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
 }
 
@@ -10363,7 +10375,7 @@ body {
 }
 
 .mcontent .header-7-sub section h6 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-7-sub section .col-sm-8 {
@@ -10383,7 +10395,7 @@ body {
     font-weight: normal;
     color: #bdc3c7;
     font-weight: 300;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-bottom: 130px;
 }
 
@@ -10604,7 +10616,7 @@ body {
     top: 0;
     z-index: 2;
     margin: 18px 0 10px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-8 .navbar.navbar-fixed-top {
@@ -10649,7 +10661,7 @@ body {
     font-weight: normal;
     color: #7f8c8d;
     font-weight: 800;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     color: #95a5a6;
 }
 
@@ -10701,7 +10713,7 @@ body {
 .mcontent .header-8-sub .lead {
     font-size: 24px;
     font-weight: normal;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     text-align: center;
     font-weight: 300;
     color: #2c3e50;
@@ -10737,7 +10749,7 @@ body {
     font-size: 13px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     opacity: 0;
     filter: alpha(opacity=0);
 }
@@ -10803,7 +10815,7 @@ body {
     color: #aa5a17;
     font-weight: 800;
     letter-spacing: 1.6px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-9 .navbar .nav > li > a:hover,
@@ -10876,7 +10888,7 @@ body {
     font-size: 46px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
     line-height: 46.00000000000001px;
     letter-spacing: 0;
@@ -10894,7 +10906,7 @@ body {
     font-size: 13px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
     letter-spacing: 1.6px;
     text-transform: uppercase;
@@ -10930,7 +10942,7 @@ body {
     font-size: 13px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
     line-height: 25px;
@@ -11031,7 +11043,7 @@ body {
     font-size: 25px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
 }
 
@@ -11176,7 +11188,7 @@ body {
     font-size: 45px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 
@@ -11184,7 +11196,7 @@ body {
     font-size: 25px;
     font-weight: normal;
     color: #bdc3c7;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     line-height: 37.5px;
 }
@@ -11194,7 +11206,7 @@ body {
         font-size: 36px;
         font-weight: normal;
         color: #ffffff;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "museo sans", Helvetica, Arial, sans-serif;
         font-weight: 300;
     }
 
@@ -11212,7 +11224,7 @@ body {
     font-weight: normal;
     color: #ffffff;
     font-weight: 500;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     border: 8px solid white;
     display: inline-block;
     margin: 0;
@@ -11301,7 +11313,7 @@ body {
     z-index: 2;
     top: 0;
     margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-11 .navbar.navbar-fixed-top {
@@ -11389,7 +11401,7 @@ body {
     font-weight: normal;
     color: #2c3e50;
     margin-bottom: 15px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 
@@ -11397,7 +11409,7 @@ body {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-11-sub .additional-links {
@@ -11460,7 +11472,7 @@ body {
 }
 
 .mcontent .header-11-sub .signup-form form {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-top: 40px;
     margin-bottom: 20px;
 }
@@ -11628,7 +11640,7 @@ body {
     width: 100%;
     top: 90px;
     margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-size: 13px;
     font-weight: normal;
     color: #bdc3c7;
@@ -11821,14 +11833,14 @@ body {
 .mcontent .header-12-sub .aside h6,
 .mcontent .header-12-sub .aside .h6 {
     color: white;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-12-sub .aside h3 {
     font-size: 32px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     margin: 0 0 30px;
 }
@@ -11837,7 +11849,7 @@ body {
     font-size: 13px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
     line-height: 24.3px;
 }
@@ -12053,7 +12065,7 @@ body {
     font-size: 29.000000000000004px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-bottom: 26px;
     font-weight: 300;
 }
@@ -12062,7 +12074,7 @@ body {
     font-size: 22px;
     font-weight: normal;
     color: #bdc3c7;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 
@@ -12172,7 +12184,7 @@ body {
 .mcontent .header-14-sub .h5,
 .mcontent .header-14-sub h6,
 .mcontent .header-14-sub .h6 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     color: white;
 }
 
@@ -12204,7 +12216,7 @@ body {
     font-size: 13px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
     letter-spacing: 2px;
 }
@@ -12575,7 +12587,7 @@ body {
     font-weight: normal;
     color: #ffffff;
     font-weight: 800;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     letter-spacing: 4px;
 }
 
@@ -12670,7 +12682,7 @@ body {
     font-size: 13px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-16 .navbar .navbar-header {
@@ -12693,7 +12705,7 @@ body {
     font-size: 13px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     width: auto;
     height: auto;
     letter-spacing: 1px;
@@ -12891,7 +12903,7 @@ body {
     font-weight: normal;
     color: #7f8c8d;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
 }
 
@@ -12998,7 +13010,7 @@ body {
     font-size: 13px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
 }
 
@@ -13393,7 +13405,7 @@ body {
     font-size: 28px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 
@@ -13454,7 +13466,7 @@ body {
     font-size: 22px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     line-height: 32px;
 }
 
@@ -13726,7 +13738,7 @@ body {
 .mcontent .header-18 .header-18-sub .h5,
 .mcontent .header-18 .header-18-sub h6,
 .mcontent .header-18 .header-18-sub .h6 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-18 .header-18-sub header {
@@ -14017,7 +14029,7 @@ body {
     position: absolute;
     z-index: 2;
     top: 100px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     opacity: 0;
     filter: alpha(opacity=0);
 }
@@ -14278,7 +14290,7 @@ body {
 
 .mcontent .header-20 .navbar {
     margin-top: 10px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-20 .navbar.navbar-fixed-top {
@@ -14346,7 +14358,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     letter-spacing: -1px;
     margin-bottom: 30px;
@@ -14362,7 +14374,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-bottom: 30px;
 }
 
@@ -14612,7 +14624,7 @@ body {
 
 .mcontent .header-21 .navbar {
     margin-top: 107px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-21 .navbar.navbar-fixed-top {
@@ -14695,7 +14707,7 @@ body {
     padding: 30px 10px 0;
     font-size: 16px;
     font-weight: normal;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
     color: #bdc3c7;
@@ -14822,7 +14834,7 @@ body {
     font-size: 25px;
     font-weight: normal;
     color: #bdc3c7;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 
@@ -14890,7 +14902,7 @@ body {
 }
 
 .mcontent .header-22 .navbar {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-size: 13px;
 }
 
@@ -15091,7 +15103,7 @@ body {
     position: absolute;
     z-index: 2;
     top: 60px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .header-23 .navbar.navbar-fixed-top {
@@ -15103,7 +15115,7 @@ body {
     font-size: 25px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
 }
 
@@ -15423,7 +15435,7 @@ body {
     padding: 55px 0 55px;
     background: #34495e;
     color: #fff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 2px;
@@ -15825,7 +15837,7 @@ body {
     font-weight: 700;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     text-transform: none;
 }
 
@@ -15882,7 +15894,7 @@ body {
     padding: 32px 0 40px;
     background: #1abc9c;
     color: #fff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 3px;
@@ -16062,7 +16074,7 @@ body {
     margin: 40px 0 20px;
     color: #95a5a6;
     font-size: 12px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     line-height: 18px;
 }
 
@@ -16150,7 +16162,7 @@ body {
 .mcontent .projects-1 .title a {
     color: #bdc3c7;
     font-size: 13px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -16212,7 +16224,7 @@ body {
 
 .mcontent .projects-1 .head-box .brand {
     margin-bottom: 17px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-size: 23px;
     color: #34495e;
@@ -16453,7 +16465,7 @@ body {
 }
 
 .mcontent .projects-2 .content {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 13px;
@@ -16465,7 +16477,7 @@ body {
     display: block;
     margin: 18px 0 0;
     font-size: 13px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     ffont-weight: 500;
 }
 
@@ -16559,7 +16571,7 @@ body {
     font-size: 50px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
     letter-spacing: 0px;
     margin-bottom: 12px;
@@ -16570,7 +16582,7 @@ body {
     font-size: 30px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     letter-spacing: 0px;
     padding-top: 0;
@@ -17149,7 +17161,7 @@ body {
     bottom: 19px;
     color: #fff;
     font-size: 13px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.14em;
@@ -17263,7 +17275,7 @@ body {
 .mcontent .crew-3 .title a {
     color: #bdc3c7;
     font-size: 13px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     margin-right: 22px;
@@ -17420,7 +17432,7 @@ body {
     bottom: 19px;
     color: #fff;
     font-size: 13px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.14em;
@@ -17767,7 +17779,7 @@ body {
     font-weight: normal;
     color: #ffffff;
     line-height: 16px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     text-transform: none;
 }
 
@@ -18110,7 +18122,7 @@ body {
     font-size: 25px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -18159,7 +18171,7 @@ body {
     font-size: 20px;
     font-weight: normal;
     font-weight: 500;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     color: #ffffff;
 }
 
@@ -18242,7 +18254,7 @@ body {
     font-size: 25px;
     font-weight: normal;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     line-height: 18px;
 }
@@ -18257,7 +18269,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     text-transform: none;
 }
 
@@ -18531,7 +18543,7 @@ body {
 }
 
 .mcontent .footer-7 nav {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .footer-7 nav ul {
@@ -18763,7 +18775,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: none;
 }
@@ -18772,14 +18784,14 @@ body {
     font-size: 16px;
     font-weight: normal;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     line-height: 26px;
 }
 
 .mcontent .footer-9 a {
     font-size: 16px;
     color: #e74c3c;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: normal;
 }
 
@@ -18816,7 +18828,7 @@ body {
     font-size: 25px;
     font-weight: normal;
     color: inherit;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     color: #34495e;
 }
@@ -18954,7 +18966,7 @@ body {
     font-size: 50px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     letter-spacing: -1px;
 }
@@ -19010,7 +19022,7 @@ body {
     font-size: 50px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .footer-10 .subscribe-form .btn {
@@ -19185,7 +19197,7 @@ body {
 .mcontent .footer-11 .additional-links a {
     margin: 0 10px;
     color: #95a5a6;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .mcontent .footer-11 .additional-links a:hover,
@@ -19243,20 +19255,20 @@ body {
     font-weight: normal;
     background: #f1f1f1;
     color: rgba(44, 62, 80, 0.2);
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
     letter-spacing: -2px;
 }
 
 /*.mcontent .footer-12:before {*/
-    /*content: '';*/
-    /*position: absolute;*/
-    /*top: 110px;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*height: 2px;*/
-    /*overflow: hidden;*/
-    /*background: #ebedee;*/
+/*content: '';*/
+/*position: absolute;*/
+/*top: 110px;*/
+/*left: 0;*/
+/*right: 0;*/
+/*height: 2px;*/
+/*overflow: hidden;*/
+/*background: #ebedee;*/
 /*}*/
 
 .mcontent .footer-12 [class*="fui-"] {
@@ -19348,7 +19360,7 @@ body {
     font-size: 12px;
     font-weight: normal;
     color: inherit;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
 }
@@ -19445,7 +19457,7 @@ body {
     font-size: 16px;
     font-weight: normal;
     color: inherit;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-align: center;
     margin: 0 100px;
@@ -19645,7 +19657,7 @@ body {
     padding: 0;
     margin: 0;
     overflow: visible;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 @media (max-width: 1200px) {
@@ -19771,7 +19783,7 @@ body {
 .dockbar .main-menu dl dd a {
     font-size: 12px;
     font-weight: normal;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     padding-right: 22px;
     text-transform: uppercase;
@@ -19789,12 +19801,6 @@ body {
 .dockbar .main-menu dl dd a.active {
     text-decoration: none;
     color: white;
-}
-
-body {
-    padding-top: 66px;
-    position: relative;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body.hovered {
@@ -20106,7 +20112,7 @@ body .colapsed-menu::-webkit-scrollbar {
 .manual-pages.hti .container p {
     font-size: 20px;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: normal;
     margin: 49px 0 0 0;
 }
@@ -20122,7 +20128,7 @@ body .colapsed-menu::-webkit-scrollbar {
     font-size: 20px;
     font-weight: normal;
     color: #303336;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -20149,7 +20155,7 @@ body .colapsed-menu::-webkit-scrollbar {
     font-size: 18px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     width: 40%;
     -webkit-box-sizing: border-box;
@@ -20187,7 +20193,7 @@ body .colapsed-menu::-webkit-scrollbar {
     font-size: 20px;
     font-weight: normal;
     color: #303336;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -20202,7 +20208,7 @@ body .colapsed-menu::-webkit-scrollbar {
     font-size: 35px;
     font-weight: normal;
     color: #1b1f23;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
     letter-spacing: -2px;
     margin: 125px 0 0 0;
@@ -20212,7 +20218,7 @@ body .colapsed-menu::-webkit-scrollbar {
     font-size: 28px;
     font-weight: normal;
     color: #1b1f23;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
     letter-spacing: -2px;
     margin: 90px 0 0 0;
@@ -20221,7 +20227,7 @@ body .colapsed-menu::-webkit-scrollbar {
 .manual-pages .container p {
     font-size: 20px;
     color: #7f8c8d;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: normal;
     margin: 48px 0 0 0;
 }
@@ -20231,7 +20237,7 @@ body .colapsed-menu::-webkit-scrollbar {
     font-size: 18px;
     font-weight: normal;
     color: #303336;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     padding: 19px 31px;
     border: 3px #303336 solid;
@@ -20333,7 +20339,7 @@ body .colapsed-menu::-webkit-scrollbar {
     font-weight: normal;
     color: #1b1f23;
     text-decoration: none;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .manual-pages .container a:hover {
@@ -20444,7 +20450,7 @@ body .colapsed-menu::-webkit-scrollbar {
     font-size: 20px;
     font-weight: normal;
     color: #303336;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 600;
     letter-spacing: -0.2px;
     line-height: 36px;
@@ -20478,7 +20484,7 @@ body .colapsed-menu::-webkit-scrollbar {
     padding: 0;
     margin: 0;
     overflow: visible;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 .dockbar.navbar-fixed-top .colapsed-menu {
@@ -20674,7 +20680,7 @@ body .colapsed-menu::-webkit-scrollbar {
 .dockbar .main-menu dl dd a {
     font-size: 12px;
     font-weight: normal;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     padding-right: 22px;
     text-transform: uppercase;
@@ -20743,7 +20749,7 @@ body .colapsed-menu::-webkit-scrollbar {
     font-size: 14px;
     font-weight: normal;
     color: #1b1f23;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -20767,7 +20773,7 @@ body .colapsed-menu::-webkit-scrollbar {
 .dockbar .sub-menu dl dd a {
     font-size: 13px;
     font-weight: normal;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-decoration: underline;
     color: #797b7d;
@@ -20791,7 +20797,7 @@ body .colapsed-menu::-webkit-scrollbar {
 body {
     padding-top: 112px;
     position: relative;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 body:before {
@@ -20869,7 +20875,7 @@ a.active {
     font-size: 20px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
     background-color: #2d353d;
     -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -21555,7 +21561,7 @@ a.active {
     line-height: 35px;
     font-weight: 800;
     float: left;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     margin-top: 0;
     display: inline-block;
     margin-bottom: 0;
@@ -21565,7 +21571,7 @@ a.active {
     font-size: 28px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     margin-bottom: 46px;
     margin-top: 93px;
@@ -21576,7 +21582,7 @@ a.active {
     font-weight: normal;
     color: #7f8c8d;
     font-weight: 300;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0 0 48px 0;
 }
@@ -21607,7 +21613,7 @@ a.active {
     counter-increment: li;
     display: inline-block;
     float: left;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     margin: 5px 0 0 -66px;
     padding: 3px 9px;
@@ -22707,7 +22713,7 @@ ul li .btn {
 
 .mcontent .header-21 .navbar {
     margin-top: 29px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
 }
 
 footer .social {
@@ -22753,36 +22759,47 @@ footer .social div {
 footer .social .footer_twitter i {
     color: #55ACEE;
 }
+
 footer .social .footer_twitter:hover span {
     color: #55ACEE;
 }
+
 footer .social .behance i {
     color: #1769ff;
 }
+
 footer .social .behance:hover span {
     color: #1769ff;
 }
+
 footer .social .instagram i {
     color: #7A50C0;
 }
+
 footer .social .instagram:hover span {
     color: #7A50C0;
 }
+
 footer .social .dribbble i {
     color: #EA4C89;
 }
+
 footer .social .dribbble:hover span {
     color: #EA4C89;
 }
+
 footer .social .git i {
     color: #4183c4;
 }
+
 footer .social .git:hover span {
     color: #4183c4;
 }
+
 footer .social .google-plus-ac i {
     color: #dd4b39;
 }
+
 footer .social .google-plus-ac:hover span {
     color: #dd4b39;
 }
@@ -22791,7 +22808,7 @@ footer .social .google-plus-ac:hover span {
     font-size: 27px;
     font-weight: normal;
     color: #fff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     line-height: 37.5px;
     letter-spacing: 0px;
@@ -22801,13 +22818,13 @@ footer .social .google-plus-ac:hover span {
     font-size: 67px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 
 .footer-12 {
     font-size: 84px;
-    color: #555! important;
+    color: #555 ! important;
     font-weight: 800;
 }
 
@@ -22839,7 +22856,7 @@ footer .social .google-plus-ac:hover span {
 
 .title .submitted {
     font-size: 12px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.19em;
@@ -22850,4 +22867,55 @@ footer .social .google-plus-ac:hover span {
 .title .submitted > * {
     margin: 0 15px;
     white-space: nowrap;
+}
+
+.mcontent .blog-1 p + p {
+    margin-top: 14px;
+}
+
+.mcontent .blog-1 p {
+    margin-bottom: 18px;
+    margin-top: 30px;
+}
+
+li {
+    line-height: 19px;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.highlight {
+    background-color: #272829;
+    padding: .625em .9375em;
+    border-radius: .1875em;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.highlight pre, pre, .highlight .hll {
+    background-color: #272822;
+    border: 0px solid #ccc;
+    padding: 18px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+    font-weight: 100;
+}
+pre code {
+    color: #f9f8f5;
+}
+
+.highlight .nt {
+    color: #f92672;
+}
+
+.mcontent .blog-1 .links a {
+    color: #1abc9c;
+    font-size: 17px;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 1.5;
 }
