@@ -1,61 +1,170 @@
 ---
 layout: post
-title: Jekyll template guide
-excerpt: "A step-by-step guide for Jekyll template"
-categories: [Jekyll, Windows, Git, template , step-by-step ,guide]
+title: Getting started with React.js and Gulp
+excerpt: "A step-by-step guide for using gulp with react.js"
+categories: [react, web, gulp, npm, step-by-step ,guide, learning, understand react]
 comments: true
 tags:
     - HTML
+    - JavaScript
     - CSS
-    - Jekyll
+    - Gulp
+    - React.Js
 ---
 
-## Get up and running in seconds.
+I’ve been learning React.js building user interfaces for the past couple of days, and belive me it as been really challenging.
 
-Markdown (or Textile), Liquid, HTML & CSS go in. Static sites come out ready for deployment.
+Please check in mind that at the time of this post the current version of React is 0.14 and also please bear in mind that am just learning this as well but i think i have the tools and skills to share a-little that i have come to accrued in the last couple of day, After a couple of days of learning the basics (reading their Getting Started introduction to React and following their tutorial), I feel i should configured a basic gulpfile.js to include React in my local development environment.
+
+
+Note: If you’re new to gulp, you may want to get familiarized with it before continuing (this post assumes you’re familiar with it). 
+Here are some articles to get you started [getting started with gulp](http://alistapart.com/blog/post/getting-started-with-gulp) by alistapart and 
+[getting started gulp](https://css-tricks.com/getting-started-gulp/) by css-tricks
+
+
+### My gulp workflow features the following:
+
+* Convert JSX to JavaScript
+* Concatenate JavaScript files
+* BrowserSync with auto-refresh of CSS changes
+* ESLint to identify JSX and JavaScript errors/problems
+* Sourcemaps to help debug JSX JavaScript
+
+I’ll only be covering in detail the JavaScript and JSX parts of this guide. Here’s a look at my project file structure:
 
 {% highlight html %}
-gem install jekyll
-jekyll new my-awesome-site
-cd my-awesome-site
-/my-awesome-site $ jekyll serve
-# => Now browse to http://localhost:4000
+├── builds
+│   ├── development
+│   │   └── src
+│   │       ├── css
+│   │       ├── images
+│   │       ├── js
+│   │       └── vendor
+│   │   ├── index.html
+│   └── process
+│       └── jsx
+│
+├── .gitignore
+├── node_modules
+├── bower.json
+├── gulpfile.js
+└── package.json
 {% endhighlight %}
 
-### Configuration
+…and the package.json file, where I define any gulp dependencies:
 
-Jekyll allows you to concoct your sites in any way you can dream up, and it’s thanks to the powerful and flexible configuration options that this is possible. These options can either be specified in a `_config.yml` file placed in your site’s root directory, or can be specified as flags for the `jekyll` executable in the terminal.
+{% highlight html %}
+{
+  "name": "weatherApp",
+  "version": "1.0.0",
+  "author": "Olatunde Owokoniran",
+  "description": "This is a description",
+  "devDependencies": {
+    "browser-sync": "^2.9.6",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-newer": "^0.5.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-eslint": "^1.0.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  }
+}
+{% endhighlight %}
 
-### Setting
+So am going to assuming that you have npm and gulp installed, run npm install and you should be set.
 
-The table below lists the available settings for Jekyll, and the various `options` (specified in the configuration file) and `flags` (specified on the command-line) that control them.
+gulpfile.js
+The meat of the setup is in my gulpfile.js file, which looks like the following:
 
-{: .table .table-striped .table-bordered}
-| SETTING | OPTIONS AND FLAGS |
-|:--------|:-------:|--------:|
-| <strong> Site Source </strong> <br> Change the directory where Jekyll will read files |  `source: DIR` <br> `-s, --source DIR` |
-| <strong> Site Destination </strong> <br> Change the directory where Jekyll will write files |  `destination: DIR` <br> `-d, --destination DIR` |
-| <strong> Safe </strong> <br> Disable custom plugins, and ignore symbolic links. |  `safe: BOOL` <br> `--safe` |
-| <strong> Exclude </strong> <br> Exclude directories and/or files from the conversion. These exclusions are relative to the site's source directory and cannot be outside the source directory. |  `exclude: [DIR, FILE, ...]` |
-| <strong> Include </strong> <br> Force inclusion of directories and/or files in the conversion.  `.htaccess` is a good example since dotfiles are excluded by default. |  `include: [DIR, FILE, ...]` |
-| <strong> Time Zone </strong> <br>Set the time zone for site generation. This sets the `TZ` environment variable, which Ruby uses to handle time and date creation and manipulation. Any entry from the IANA Time Zone Database is valid, e.g. `America/New_York`. A list of all available values can be found here. The default is the local time zone, as set by your operating system. |  `timezone: TIMEZONE` |
-| <strong> Encoding </strong> <br> Set the encoding of files by name (only available for Ruby 1.9 or later). The default value is `utf-8` |  `encoding: ENCODING` |
+{% highlight html %}
+var gulp          = require('gulp');
+var babel         = require('gulp-babel');
+var sourcemaps    = require('gulp-sourcemaps');
+var concat        = require('gulp-concat');
+var newer         = require('gulp-newer');
+var plumber       = require('gulp-plumber');
+var browserSync   = require('browser-sync');
+var uglify        = require('gulp-uglify');
+var pump          = require('pump');
 
-read more about settings - [jekyllrb configuration](https://jekyllrb.com/docs/configuration/)
+var appSrc = 'builds/development/',
+    jsxSrc = 'process/jsx/';
 
-## jekyll Templates
+gulp.task('html', function () {
+    gulp.src(appSrc + '**/*.html');
+});
 
-Jekyll uses the Liquid templating language to process templates. All of the standard Liquid tags and filters are supported. Jekyll even adds a few handy filters and tags of its own to make common tasks easier.
+gulp.task('css', function () {
+    gulp.src(appSrc + '**/*.css');
+});
 
-[http://jekyllrb.com/docs/templates/](http://jekyllrb.com/docs/templates/)
+gulp.task('concat', function () {
+    return gulp
+        .src(jsxSrc + '**/*.jsx')
+        .pipe(sourcemaps.init())
+        .pipe(babel({
+            // npm install gulp-babel babel-plugin-transform-react-jsx
+            plugins: ['transform-react-jsx']
+        }))
+        .pipe(concat('weather_app.js'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(appSrc + 'js/app/'));
+});
 
-<div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7-7W2sKhnyc" frameborder="0" allowfullscreen></iframe>
-</div>
+gulp.task('copylibs', function () {
+    return gulp
+        .src([
+            'node_modules/react/dist/react.js',
+            'node_modules/react-dom/dist/react-dom.js'
+        ])
+        .pipe(gulp.dest(appSrc + 'js/lib/react'));
+});
 
-#### Read more:
-* [Jekyll cheat](http://jekyll.tips/jekyll-cheat-sheet/)
-* [Jekyll theme by leonids](https://github.com/renyuanz/leonids)
-* [Jekyll Windows by juthilo](http://jekyll-windows.juthilo.com/1-ruby-and-devkit/)
-* [Jekyll on Windows](https://jekyllrb.com/docs/windows/)
-* [Jekyll on Windows by davidburela](https://davidburela.wordpress.com/2015/11/28/easily-install-jekyll-on-windows-with-3-command-prompt-entries-and-chocolatey/)
+gulp.task('watch', function () {
+    gulp.watch(jsxSrc + '**/*.{js,jsx}', ['concat']);
+    gulp.watch(appSrc + 'css/*.css', ['css']);
+    gulp.watch(appSrc + '**/*.html', ['html']);
+});
+
+gulp.task('browsersync', function () {
+    browserSync({
+        server: {
+            baseDir: appSrc
+        },
+        open: false,
+        online: false,
+        notify: false,
+    });
+});
+
+gulp.task('default', ['browsersync', 'watch', 'copylibs', 'concat']);
+}
+{% endhighlight %}
+
+
+Converting JSX to JavaScript with Babel
+When building with React, you can write plain JavaScript or in JSX (JavaScript syntax extension). JSX is a preprocessor that gives you a more concise syntax, and is arguably easier and more readable, but needs to be converted to native JavaScript. JSX is analogous to CoffeeScript, even Sass or LESS (but for CSS).
+
+{% highlight html %}
+// JSX
+React.render(
+  <h1>Hello, world!</h1>,
+  document.getElementById('example')
+);
+
+// Native JavaScript
+React.render(
+  React.createElement('h1', null, 'Hello, world!'),
+  document.getElementById('example')
+);
+{% endhighlight %}
+
+
+With the help of Babel and its gulp plugin, gulp-babel, you can convert JSX to JavaScript by piping babel() into the concat task, like such:
+
+### Still Learning
+I’m only a few days into learning React and this workflow is a result of my early learning stages. I’m sure I have a lot to learn and have yet to find a real-world use case to React.js; feel free to reach out [@hurlatunde](https://twitter.com/hurlatunde/).
+
