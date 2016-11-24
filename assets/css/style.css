@@ -735,22 +735,22 @@ button:active {
     background: none;
 }
 
-.navbar .navbar-toggle {
-    margin: 26px 0 10px;
-    color: white;
-    background: none;
-    padding: 0;
-    width: 30px;
-    height: 30px;
-    background: url("../img/menu-icon@2x.png") 50% no-repeat;
-    -webkit-background-size: 17px 12px;
-    -moz-background-size: 17px 12px;
-    -o-background-size: 17px 12px;
-    background-size: 17px 12px;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-}
+/*.navbar .navbar-toggle {*/
+    /*margin: 26px 0 10px;*/
+    /*color: white;*/
+    /*background: none;*/
+    /*padding: 0;*/
+    /*width: 30px;*/
+    /*height: 30px;*/
+    /*background: url("../img/menu-icon@2x.png") 50% no-repeat;*/
+    /*-webkit-background-size: 17px 12px;*/
+    /*-moz-background-size: 17px 12px;*/
+    /*-o-background-size: 17px 12px;*/
+    /*background-size: 17px 12px;*/
+    /*-webkit-border-radius: 0;*/
+    /*-moz-border-radius: 0;*/
+    /*border-radius: 0;*/
+/*}*/
 
 .navbar .navbar-toggle:before {
     display: none;
@@ -22849,9 +22849,43 @@ footer .social .google-plus-ac:hover span {
 }
 
 .bg-midnight-blue {
-    background: url('../img/img-4.jpg') bottom center no-repeat;
+    background: url('../img/llerena.jpg') center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.parallax__layer--base {
+    transform: translateZ(0);
+}
+.parallax__layer--back {
+    transform: translateZ(-1px);
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.parallax__layer--base {
+    transform: translateZ(0);
+}
+.parallax__layer--back {
+    transform: translateZ(-1px);
 }
 
 .title .submitted {
@@ -22918,4 +22952,19 @@ pre code {
     text-transform: none;
     letter-spacing: normal;
     line-height: 1.5;
+}
+
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.mcontent .blog-4 .tags a {
+    color: #bdc3c7;
+    font-size: 12px;
 }
