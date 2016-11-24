@@ -22968,3 +22968,13 @@ pre code {
     color: #bdc3c7;
     font-size: 12px;
 }
+
+.title .submitted {
+    font-size: 12px;
+    font-family: "museo sans", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.19em;
+    color: #222;
+    margin-top: 18px;
+}
