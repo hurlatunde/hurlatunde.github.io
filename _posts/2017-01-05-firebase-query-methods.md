@@ -43,3 +43,4 @@ There is still alot of things that still need to come to play before having a su
 
 #### Read more:
 * [firebase.database.Query](https://firebase.google.com/docs/reference/js/firebase.database.Query)
+* [tutorialspoint firebase query](https://www.tutorialspoint.com/firebase/firebase_queries.htm)
