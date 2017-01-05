@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Firebase Query method
-excerpt: "A more human understanding of firebase equerys"
+excerpt: "A more human understanding of firebase query"
 categories: [Firebase, Query]
 comments: true
 tags:
@@ -36,6 +36,7 @@ ascending order, because Firebase only sorts in ascending order. So if I have re
 
 {% highlight javascript %}
 startAt(<Key>) // The key at which to start reading
+equalTo(<Key>) // The key at which to query with
 endAt(<Key>) // The key at which to stop reading
 {% endhighlight %}
 
