@@ -33,6 +33,7 @@ Here are some articles to get you started [getting started with gulp](http://ali
 I’ll only be covering in detail the JavaScript and JSX parts of this guide. Here’s a look at my project file structure:
 
 {% highlight html %}
+
 ├── builds
 │   ├── development
 │   │   └── src
@@ -49,11 +50,12 @@ I’ll only be covering in detail the JavaScript and JSX parts of this guide. He
 ├── bower.json
 ├── gulpfile.js
 └── package.json
+
 {% endhighlight %}
 
 …and the package.json file, where I define any gulp dependencies:
 
-{% highlight html %}
+{% highlight javascript %}
 {
   "name": "weatherApp",
   "version": "1.0.0",
@@ -79,7 +81,7 @@ So am going to assuming that you have npm and gulp installed, run npm install an
 gulpfile.js
 The meat of the setup is in my gulpfile.js file, which looks like the following:
 
-{% highlight html %}
+{% highlight javascript %}
 var gulp          = require('gulp');
 var babel         = require('gulp-babel');
 var sourcemaps    = require('gulp-sourcemaps');
@@ -148,7 +150,7 @@ gulp.task('default', ['browsersync', 'watch', 'copylibs', 'concat']);
 Converting JSX to JavaScript with Babel
 When building with React, you can write plain JavaScript or in JSX (JavaScript syntax extension). JSX is a preprocessor that gives you a more concise syntax, and is arguably easier and more readable, but needs to be converted to native JavaScript. JSX is analogous to CoffeeScript, even Sass or LESS (but for CSS).
 
-{% highlight html %}
+{% highlight javascript %}
 // JSX
 React.render(
   <h1>Hello, world!</h1>,
