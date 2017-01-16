@@ -102,7 +102,6 @@ layout: default
 
 </style>
 
-
 <header class="header-2">
     <div class="container">
         <div class="row">
@@ -157,7 +156,7 @@ layout: default
 
 
 <div>
-    <section class="blog-1">
+    <section class="blog-1 sticky_column">
         <!--<div class="title">-->
         <!--<div class="container">-->
         <!--<h3> {{ page.title }} </h3>-->
@@ -178,36 +177,40 @@ layout: default
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-3 links">
-                    <div class="tags">
-                        <h6>CATEGORIES</h6>
-                        <ul>
-                            {% for p in page.categories %}
-                            <li><a href="{{ p.url }}">{{ p }}</a></li>
-                            {% endfor %}
-                        </ul>
+                <div class="col-sm-3 links ">
+                    <div>
+                    <div class="">
+                        <div class="tags">
+                            <h6>CATEGORIES</h6>
+                            <ul>
+                                {% for p in page.categories %}
+                                <li><a href="{{ p.url }}">{{ p }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="tags">
+                            <h6>TAGS</h6>
+                            <ul>
+                                {% for tag in page.tags %}
+                                <li>{{ tag }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="comments">
+                            <a href="#"> <a href="{{ post.url }}#disqus_thread"></a> </a>
+                        </div>
+                        <div class="sidebar-section">
+                            <h4 class="sidebar-title">Say hey!</h4>
+                            <ul class="sidebar-list">
+                                <li class="sidebar-list-item">
+                                    <a href="mailto:hurlatunde@gmail.com" class="sidebar-list-link">Drop me an email</a>
+                                </li>
+                                <li class="sidebar-list-item">
+                                    <a href="https://twitter.com/hurlatunde" class="sidebar-list-link" target="_blank">Start a conversation @hurlatunde</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="tags">
-                        <h6>TAGS</h6>
-                        <ul>
-                            {% for tag in page.tags %}
-                            <li>{{ tag }}</li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    <div class="comments">
-                        <a href="#"> <a href="{{ post.url }}#disqus_thread"></a> </a>
-                    </div>
-                    <div class="sidebar-section">
-                        <h4 class="sidebar-title">Say hey!</h4>
-                        <ul class="sidebar-list">
-                            <li class="sidebar-list-item">
-                                <a href="mailto:hurlatunde@gmail.com" class="sidebar-list-link">Drop me an email</a>
-                            </li>
-                            <li class="sidebar-list-item">
-                                <a href="https://twitter.com/hurlatunde" class="sidebar-list-link" target="_blank">Start a conversation @hurlatunde</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
 
@@ -244,7 +247,6 @@ layout: default
                             </ul>
                         </div><!-- end share-buttons -->
                     </div>
-
                     <div id="blog_content">
                         {{ content }}
                     </div>
