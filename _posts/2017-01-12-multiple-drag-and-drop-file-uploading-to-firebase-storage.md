@@ -37,7 +37,6 @@ Read more:  [Firebase Storage](https://firebase.google.com/docs/storage/)
 ### Getting Started
 #### First we need to get HTML ready to handle file upload from the system to Firebase 
 
-
 ![image-title-here](/assets/img/drop.png){:class="img-responsive"}
 
 <strong>Step 1</strong> Follow the steps to make drag and drop file upload as shown in the above image.
@@ -128,7 +127,7 @@ obj.on('drop', function (e) {
      e.preventDefault();
      var files = e.originalEvent.dataTransfer.files;
  
-     //We need to send dropped files to Server
+     //We need to send dropped files to firebase
      handleFileUpload(files,obj);
 });
 {% endhighlight %}
