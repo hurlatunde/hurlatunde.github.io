@@ -35,7 +35,7 @@ Read more:  [Firebase Storage](https://firebase.google.com/docs/storage/)
 </div>
 
 ### Getting Started
-#### First we need to get HTML ready to handle file upload from the system to Firebase 
+<strong> First we need to first create some HTML ready to handle file upload from the system to Firebase </strong>
 
 ![image-title-here](/assets/img/drop.png){:class="img-responsive"}
 
