@@ -22289,3 +22289,9 @@ pre code {
     margin-top: 18px;
 }
 
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    margin-bottom: 28px;
+    overflow: auto;
+}

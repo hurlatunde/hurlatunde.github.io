@@ -64,4 +64,5 @@ owner:
   codepen: #username
 
 # Gems
-gems: [jekyll-paginate]
+gems:
+ - jekyll-paginate
