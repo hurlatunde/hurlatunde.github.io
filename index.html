@@ -1,193 +1,37 @@
 ---
 layout: default
+title: Finding The Way Home
+cover: 'assets/images/cover1.jpg'
+class: 'home-template'
+navigation: True
+logo: 'assets/images/ghost.png'
+current: home
 ---
-<style>
+<!-- < default -->
+<!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
-    body {
-        padding-top: 0px ! important;
-        position: relative;
-        font-family: 'Lato';
-    }
-
-    .mcontent .header-4 {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        color: white;
-        position: fixed;
-        top: 0;
-        display: block ! important;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    .parent_element {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        display: block ! important;
-    }
-
-    .inner_element {
-        position: absolute;
-        display: block ! important;
-        top: 50%;
-        left: 50%;
-        z-index: 999;
-        width: 100%;
-        transform: translate(-50%, -50%);
-    }
-
-    .mcontent .nav-steps .steps-selectors {
-        margin: 0 40px;
-        font-size: 22px;
-        font-weight: normal;
-        color: #7f8c8d;
-        font-family: 'Lato';
-        letter-spacing: -7px;
-    }
-
-    .mcontent .nav-steps > * {
-        font-family: 'Lato';
-        display: inline-block;
-        text-transform: uppercase;
-        vertical-align: middle;
-    }
-
-    .mcontent .nav-steps a.active {
-        opacity: 100;
-        filter: alpha(opacity=10000);
-        opacity: 1;
-        filter: alpha(opacity=100);
-    }
-
-    .mcontent .nav-steps a:hover, .mcontent .nav-steps a:focus {
-        opacity: 50;
-        filter: alpha(opacity=5000);
-        opacity: 0.5;
-        filter: alpha(opacity=50);
-    }
-
-    .mcontent .nav-steps a:hover, .mcontent .nav-steps a:focus, .mcontent .nav-steps a.active {
-        color: #ffffff;
-    }
-
-    .mcontent .nav-steps a {
-        color: #ffffff;
-        opacity: 20;
-        filter: alpha(opacity=2000);
-        opacity: 0.2;
-        filter: alpha(opacity=20);
-    }
-
-    .mcontent .header-4 .hero-unit h1 {
-        margin: 0 0 17px;
-        font-size: 60px;
-        font-weight: normal;
-        color: #ffffff;
-        line-height: 63px;
-        font-weight: 800;
-    }
-
-    .mcontent .header-4 .hero-unit h1 {
-        margin: 0 0 17px;
-        font-size: 53px;
-        font-weight: normal;
-        color: #ffffff;
-        line-height: 51px;
-        font-weight: 400;
-    }
-
-    .mcontent .header-4 .hero-unit p {
-        font-size: 28px;
-        font-weight: normal;
-        color: #ffffff;
-        width: 80%;
-        line-height: 38px;
-        font-weight: 300;
-    }
-
-    .q_style {
-        position: absolute;
-        display: block ! important;
-        bottom: 10px;
-        right: 24px;
-        z-index: 999;
-    }
-
-    .header-4 {
-        background-image: -webkit-linear-gradient(45deg, #691657 0%, #e87330 55%, #fdc45c 100%);
-        background-image: linear-gradient(45deg, #691657 0%, #e87330 55%, #fdc45c 100%);
-        box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1);
-    }
-
-    .mcontent .header-4 .hero-unit p {
-        font-size: 22px;
-        font-weight: normal;
-        color: #ffffff;
-        width: 80%;
-        line-height: 34px;
-        font-weight: 100;
-    }
-
-</style>
-
-<a target="_blank" href="https://github.com/hurlatunde">
-    <svg width="80" height="80" viewBox="0 0 250 250" style="fill: #6c1856;position: fixed;z-index: 999;top: 0;color: #fabb57;right: 0;border: 0;" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor"></path>
-    </svg>
-</a>
-
-
-<header class="header-4 v-center bg-midnight-blue" style="background-color: #1c201d;">
-    <div class="background landing_background">&nbsp;</div>
-    <div class="parent_element">
-        <div class="inner_element">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <div class="hero-unit">
-                            <h1>
-                                <small style="font-size: 46%;">Hello. I'm</small>
-                                <br>
-                                Olatunde Owokoniran,
-                            </h1>
-                            <p>A creative software developer/designer focused on building awesome projects. Backend-End developer at
-                                <a href="initsng.com" target="_blank" style="font-weight: 300;">Inits Limited</a></p>
-                            <p>Love to produce creative solutions.</p>
-                        </div>
-
-                        <div class="nav-steps">
-
-                            <a href="https://twitter.com/hurlatunde/" target="_blank" class="active"> @hurlatunde  &nbsp;&nbsp;&nbsp;/ </a>
-                            <!--{% for my_page in site.pages %}-->
-                            <!--{% if my_page.title %}-->
-                            <!--<a href="{{ my_page.url | prepend: site.baseurl }}"> &nbsp; / &nbsp; {{ my_page.title }}</a>-->
-                            <!--{% endif %}-->
-                            <!--{% endfor %}-->
-
-                            <a href="/articles/"> &nbsp; Articles </a>
-                            <!--<a href="/portfolio/"> &nbsp; / &nbsp;Portfolio </a>-->
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- The big featured header  -->
+<header class="main-header {% if page.cover %}"
+        style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
+    <nav class="main-nav overlay clearfix">
+        {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
+        {% if page.navigation %}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {% endif %}
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{ site.name }}</h1>
+            <h2 class="page-description">{{ site.description }}</h2>
         </div>
-
-        <div class="q_style" style="right: 11px;">
-            <a href="https://www.codementor.io/olatundeowokoniran?utm_source=github&utm_medium=button&utm_term=olatundeowokoniran&utm_campaign=github"><img src="https://cdn.codementor.io/badges/i_am_a_codementor_dark.svg" alt="I am a codementor" style="max-width:100%"/></a>
-        <!--<p class="btn_style" style="font-size: 12px;border-radius: 0.25em;"> DEVELOPER &bull; DESIGNER &bull; FREELANCER </p>-->
-        </div>
-
-        <!--<p class="btn_style" style="font-size: 12px;">-->
-        <!--&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. made with <i class="fa fa-heart heart-icon"></i>-->
-        <!--by ME-->
-        <!--</p>-->
-
     </div>
-    <div class="octoverse-map"></div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
+
+<!-- The main content area on the homepage -->
+<main id="content" class="content" role="main">
+
+    <!-- The tag below includes the post loop - partials/loop.hbs -->
+    {% include loop.html %}
+
+</main>

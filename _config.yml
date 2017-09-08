@@ -1,68 +1,75 @@
-#
-###################################
-# Site wide configuration
-####################################
-#
-title:       "Hurlatunde Blogs"
-description: "Creating the world of me, with each line of code."
-url: "http://hurlatunde.github.io" # the base hostname & protocol for your site
-twitter_username: hurlatunde
-github_username:  hurlatunde
+# Jykell configuration
+#markdown: redcarpet
+#highlighter: pygments
+markdown: kramdown
+highlighter: rouge
+paginate: 5
+language: 'en-uk'
 
-#
-###################################
-# Jekyll configuration
-####################################
-#
-timezone:          Africa/Nigeria
-markdown:          kramdown
-highlighter:       rouge
-excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
-paginate_path: "/articles/page:num/"
-paginate: 10
+# Website info
+name: 'Hurlatunde Blog'
+description: "A creative software developer/designer focused on building awesome projects. Backend-End developer at Inits Limited Love to produce creative solutions."
 
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  enable_coderay: false
+# Author's info
+author: 'Casper McFadden'
+# edit 'categories' in the front matter of every post to match this username
+nickname: casper
+bio: 'Creating the world of ME with each code'
+location: 'Lagos, Nigeria'
+url: 'https://avatars.io/twitter/hurlatunde'
+image: 'assets/images/casper.png'
 
-# Site Owner configuration
-owner:
-  username: Hurlatunde
-  name: Olatunde Owkoniran
-  avatar: https://z-1-scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/13612349_10205524814554405_7966782029174826798_n.jpg?oh=ccadbbd56049737eb7f3e887f1eb5235&oe=58280D54
-  job: "Backend-End Developer"
-  bio: "Creating the world of me, with each line of code."
-  email: hurlatunde@gmail.com
-  disqus-shortname: hurlatundegithubio
-  facebook: https://www.facebook.com/Olatunde.owokoniran
-  google:
-    plus:
-    analytics: UA-81222589-1
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: hurlatunde
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
-  xing: #username
-  instagram: hurlatunde
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
+short_url: 'hurlatunde.github.io/'
+google_analytics: UA-69281367-1
+disqus: username
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+baseurl: /
 
-# Gems
-gems:
- - jekyll-paginate
+# Permalinks
+permalink: /:title
+# permalink: /author/:username
+# permalink: /tag/:tag
+
+
+# gems and other configs
+gems: [jekyll-paginate]
+exclude: [vendor]
+
+# Additional settings available on the front-matter
+# Site logo in the index.html (as in demo.ghost.io)
+# Author's page cover in _layouts/author.html
+# The same for page.html and tag.html layouts
+# Post's page cover as a per-post basis _posts/...
+# Disqus comments as a per-post basis
+# ...
+
+
+# Settings for builing master branch with travis-ci
+# with jekyll-travis
+
+# Settings for deploy rake task
+# Username and repo of Github repo, e.g.
+# https://github.com/USERNAME/REPO.git
+# username defaults to ENV['GIT_NAME'] used by Travis
+# repo defaults to USERNAME.github.io
+# Branch defaults to "source" for USERNAME.github.io
+# or "master" otherwise
+safe: false
+lsi: false
+username: biomadeira
+repo: jasper
+branch: master
+relative_source: ../jasper/
+destination: ../jasper-pages/
+production_url:  https://hurlatunde.github.io/
+source_url:      https://github.com/biomadeira/jasper/
+
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
