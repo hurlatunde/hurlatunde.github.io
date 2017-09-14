@@ -1,18 +1,24 @@
 ---
 layout: post
 title: Up and running with Firebase Authentication
-excerpt: "Firebase Authentication makes authentication easy for end users and developers. It allows you to focus on your users, and not the sign-in infrastructure to support them."
-categories: [Firebase, Authentication, Google, Login, Login Authentication]
+layout: post
+title: Running with Jekyll on Windows - Part one
+date:   2016-07-15 10:18:00
+subclass: 'post tag-test tag-content'
+navigation: True
+logo: 'assets/images/ghost.png'
+cover: 'assets/images/cover7.jpg'
 comments: true
-tags:
-    - Firebase
-    - Authentication
-    - Google Apps
 image:
   feature: https://firebase.google.com/docs/auth/images/auth-providers.png
   credit: Google Firebase
   creditlink: https://firebase.google.com/docs/auth/?utm_campaign=Firebase_announcement_education_general_en_05-18-16_&utm_source=Firebase&utm_medium=yt-desc
+excerpt: "Firebase Authentication makes authentication easy for end users and developers. It allows you to focus on your users, and not the sign-in infrastructure to support them."
+categories: [Firebase, Authentication, Google, Login, Login Authentication]
+comments: true
+tags: Firebase Authentication Google Apps
 ---
+
 
 ## How does it work?
 
