@@ -3,7 +3,7 @@
 #highlighter: pygments
 markdown: kramdown
 highlighter: rouge
-paginate: 5
+paginate: 10
 language: 'en-uk'
 
 # Website info
@@ -11,15 +11,15 @@ name: 'Hurlatunde Blog'
 description: "A creative software developer/designer focused on building awesome projects. Backend-End developer at Inits Limited Love to produce creative solutions."
 
 # Author's info
-author: 'Casper McFadden'
+author: 'Olatunde Owokoniran'
 # edit 'categories' in the front matter of every post to match this username
-nickname: casper
+nickname: hurlatunde
 bio: 'Creating the world of ME with each code'
 location: 'Lagos, Nigeria'
 url: 'https://avatars.io/twitter/hurlatunde'
-image: 'assets/images/casper.png'
+image: 'assets/images/hurlatunde.jpeg'
 
-short_url: 'hurlatunde.github.io/'
+short_url: 'hurlatunde.github.io'
 google_analytics: UA-69281367-1
 disqus: username
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
