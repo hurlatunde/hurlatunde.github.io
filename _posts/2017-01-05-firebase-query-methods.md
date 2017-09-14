@@ -1,12 +1,15 @@
 ---
 layout: post
 title: Firebase Query method
+date:   2017-01-05 10:18:00
+subclass: 'post tag-test tag-content'
+navigation: True
+logo: 'assets/images/ghost.png'
+cover: 'assets/images/cover7.jpg'
+comments: true
 excerpt: "A more human understanding of firebase query"
 categories: [Firebase, Query]
-comments: true
-tags:
-    - NoSQL databases
-    - Firebase
+tags: NoSQL databases Firebase
 ---
 
 I believe for you to try and read about firebase query method, you probably have an idea of what firebase does.

@@ -1,16 +1,18 @@
 ---
 layout: post
 title: Running with Jekyll on Windows - Part two
+date:   2016-07-21 10:18:00
+subclass: 'post tag-test tag-content'
+navigation: True
+logo: 'assets/images/ghost.png'
+cover: 'assets/images/cover7.jpg'
+comments: true
 excerpt: "A step-by-step guide to setting up Jekyll on Windows by @hurlatunde."
 categories: [Jekyll, Windows, Git]
-tags:
-    - HTML
-    - CSS
-    - Jekyll
-    - Git
-    - Windows
 comments: true
+tags: HTML CSS Jekyll Git Windows
 ---
+
 
 ## Install the Jekyll Gem
 

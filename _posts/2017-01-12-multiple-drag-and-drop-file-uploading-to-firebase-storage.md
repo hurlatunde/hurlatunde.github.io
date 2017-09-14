@@ -1,17 +1,14 @@
 ---
 layout: post
 title:  Multiple drag and drop file uploading to firebase storage
+date:   2017-01-12 10:18:00
+subclass: 'post tag-test tag-content'
+navigation: True
+cover: 'assets/images/cover7.jpg'
+comments: true
 excerpt: "Jquery easy file upload to firebase storage"
 categories: [Firebase, Storage, File, Upload]
-comments: true
-tags:
-    - NoSQL databases
-    - Firebase
-    - File
-    - multiple
-    - drag and drop
-    - Storage
-    - Google Cloud Storage
+tags: NoSQL databases Firebase File multiple Google Cloud Storage
 ---
 
 In this upload example, I have explained how to implement drag and drop file upload using HTML5 and jQuery with firebase multiply file upload.

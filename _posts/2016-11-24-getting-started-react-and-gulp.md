@@ -1,15 +1,16 @@
 ---
 layout: post
 title: Getting started with React.js and Gulp
+date:   2016-11-24 10:18:00
+subclass: 'post tag-test tag-content'
+navigation: True
+logo: 'assets/images/ghost.png'
+cover: 'assets/images/cover7.jpg'
+comments: true
 excerpt: "A step-by-step guide for using gulp with react.js"
 categories: [react, web, gulp, npm, step-by-step ,guide, learning, understand react]
 comments: true
-tags:
-    - HTML
-    - JavaScript
-    - CSS
-    - Gulp
-    - React.Js
+tags: HTML JavaScript CSS Gulp React.Js
 ---
 
 I’ve been learning React.js building user interfaces for the past couple of days, and belive me it as been really challenging.

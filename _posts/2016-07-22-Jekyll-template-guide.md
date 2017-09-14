@@ -1,13 +1,16 @@
 ---
 layout: post
 title: Jekyll template guide
+date:   2016-07-22 10:18:00
+subclass: 'post tag-test tag-content'
+navigation: True
+logo: 'assets/images/ghost.png'
+cover: 'assets/images/cover7.jpg'
+comments: true
 excerpt: "A step-by-step guide for Jekyll template"
 categories: [Jekyll, Windows, Git, template , step-by-step ,guide]
 comments: true
-tags:
-    - HTML
-    - CSS
-    - Jekyll
+tags: HTML CSS Jekyll
 ---
 
 ## Get up and running in seconds.
