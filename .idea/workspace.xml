@@ -2,51 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c32a1a0-f95f-4d67-9e5d-a76702b1cc5b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/firebase.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/hurlatunde.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/post/al.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/post/altar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/post/constraints.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/post/firebase_schema.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/post/insert.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/post/insert_error.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/post/sql.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-07-15-up-and-running-with-firebase-authentication.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/hurla.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog_old/1863-11-19-gettysburg-address.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog_old/1865-11-26-down-the-rabbit-hole.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog_old/1871-03-18-looking-glass-house.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog_old/1912-07-24-out-to-sea.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog_old/1948-12-12-the-purpose-of-education.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog_old/1963-08-28-i-have-a-dream.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog_old/2014-08-12-the-businessman-and-fisherman.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog_old/2014-09-27-a-full-and-comprehensive-style-test.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/1863-11-19-gettysburg-address.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/1865-11-26-down-the-rabbit-hole.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/1871-03-18-looking-glass-house.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/1912-07-24-out-to-sea.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/1948-12-12-the-purpose-of-education.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/1963-08-28-i-have-a-dream.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2014-08-12-the-businessman-and-fisherman.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2014-09-27-a-full-and-comprehensive-style-test.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2016-07-15-Up -and-running-with-firebase-authentication.md" afterPath="$PROJECT_DIR$/_posts/2017-09-14-firebase-database-for-sql-developers.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/disqus.html" afterPath="$PROJECT_DIR$/_includes/disqus.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/loop.html" afterPath="$PROJECT_DIR$/_includes/loop.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/author.html" afterPath="$PROJECT_DIR$/_layouts/author.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/tag.html" afterPath="$PROJECT_DIR$/_layouts/tag.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-07-21-Run-Jekyll-on-Windows-part-one.md" afterPath="$PROJECT_DIR$/_posts/2016-07-21-Run-Jekyll-on-Windows-part-one.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-07-21-Run-Jekyll-on-Windows-part-two.md" afterPath="$PROJECT_DIR$/_posts/2016-07-21-Run-Jekyll-on-Windows-part-two.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-07-22-Jekyll-template-guide.md" afterPath="$PROJECT_DIR$/_posts/2016-07-22-Jekyll-template-guide.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-11-24-getting-started-react-and-gulp.md" afterPath="$PROJECT_DIR$/_posts/2016-11-24-getting-started-react-and-gulp.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-01-05-firebase-query-methods.md" afterPath="$PROJECT_DIR$/_posts/2017-01-05-firebase-query-methods.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-01-12-multiple-drag-and-drop-file-uploading-to-firebase-storage.md" afterPath="$PROJECT_DIR$/_posts/2017-01-12-multiple-drag-and-drop-file-uploading-to-firebase-storage.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-03-07-using-json-objects-for-local-storage.md" afterPath="$PROJECT_DIR$/_posts/2017-03-07-using-json-objects-for-local-storage.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/screen.css" afterPath="$PROJECT_DIR$/assets/css/screen.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/head.html" afterPath="$PROJECT_DIR$/_includes/head.html" />
     </list>
     <ignored path="hurlatunde.github.io.git.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,15 +26,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2017-09-14-firebase-database-for-sql-developers.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="870">
+              <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/head.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="58" lean-forward="true" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-09-14-firebase-database-for-sql-developers.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2017-09-14-firebase-database-for-sql-developers.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="30">
-                <caret line="2" column="50" lean-forward="false" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+              <first_editor relative-caret-position="315">
+                <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,16 +74,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-09-27-a-full-and-comprehensive-style-test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog_old/2014-09-27-a-full-and-comprehensive-style-test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1420">
-              <caret line="380" column="21" lean-forward="true" selection-start-line="380" selection-start-column="21" selection-end-line="380" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -211,7 +189,6 @@
         <option value="$PROJECT_DIR$/.bundle/config" />
         <option value="$PROJECT_DIR$/_includes/author_pagination.html" />
         <option value="$PROJECT_DIR$/_includes/navigation.html" />
-        <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/_posts/1963-08-28-i-have-a-dream.md" />
         <option value="$PROJECT_DIR$/Gemfile_.lock" />
         <option value="$PROJECT_DIR$/Gemfile_" />
@@ -231,12 +208,13 @@
         <option value="$PROJECT_DIR$/_includes/loop.html" />
         <option value="$PROJECT_DIR$/_posts/2017-03-07-using-json-objects-for-local-storage.md" />
         <option value="$PROJECT_DIR$/_posts/2017-01-12-multiple-drag-and-drop-file-uploading-to-firebase-storage.md" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/assets/css/screen.css" />
         <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/_includes/disqus.html" />
         <option value="$PROJECT_DIR$/_posts/2017-09-14-firebase-database-for-sql-developers.md" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/_includes/head.html" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -467,12 +445,12 @@
       <workItem from="1504544931801" duration="18001000" />
       <workItem from="1505114218788" duration="924000" />
       <workItem from="1505214412920" duration="446000" />
-      <workItem from="1505217253339" duration="14123000" />
+      <workItem from="1505217253339" duration="15314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126314000" />
+    <option name="totallyTimeSpent" value="127505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -656,14 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/author_pagination.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -768,22 +738,6 @@
             <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,11 +894,35 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-09-14-firebase-database-for-sql-developers.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="50" lean-forward="false" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+          <first_editor relative-caret-position="315">
+            <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="58" lean-forward="true" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

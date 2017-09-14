@@ -7,7 +7,7 @@ paginate: 10
 language: 'en-uk'
 
 # Website info
-name: 'Hurlatunde Blog'
+name: 'EachLine Of CODE'
 description: "A creative software developer/designer focused on building awesome projects. Backend-End developer at Inits Limited Love to produce creative solutions."
 
 # Author's info
@@ -56,7 +56,7 @@ exclude: [vendor]
 # or "master" otherwise
 safe: false
 lsi: false
-username: biomadeira
+username: hurlatunde
 repo: jasper
 branch: master
 relative_source: ../jasper/
