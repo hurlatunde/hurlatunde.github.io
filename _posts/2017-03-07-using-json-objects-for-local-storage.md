@@ -3,7 +3,7 @@ layout: post
 cover: 'assets/images/cover3.jpg'
 title: Using JSON objects for local storage
 excerpt: "Saving JSON object to browser local storage"
-date:   2014-09-27 10:18:00
+date:   2017-03-07 10:18:00
 comments: true
 tags:
     - Local Storage
@@ -11,7 +11,7 @@ subclass: 'post tag-test tag-content'
 categories: 'casper'
 categories: local_storage, Jquery]
 navigation: True
-logo: 'assets/images/ghost.png'
+logo: 'assets/images/hurla.svg'
 ---
 
 When it comes to Local Storage i recommend using an abstraction library for many of the features discussed here as well as better compatibility.

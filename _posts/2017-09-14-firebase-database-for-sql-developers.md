@@ -1,38 +1,69 @@
 ---
 layout: post
-title: Up and running with Firebase Authentication
-layout: post
-date:   2016-07-15 10:18:00
+title: Firebase database for SQL developers - Part 1
+excerpt: "Understanding JSON / NoSQL database for SQL database"
+date:   2017-09-14 03:18:00
 subclass: 'post tag-test tag-content'
 navigation: True
-logo: 'assets/images/ghost.png'
+logo: 'assets/images/hurla.svg'
+cover: 'assets/images/firebase.png'
 comments: true
 image:
-  feature: https://firebase.google.com/docs/auth/images/auth-providers.png
+  feature: firebase
   credit: Google Firebase
-excerpt: "Firebase Authentication makes authentication easy for end users and developers. It allows you to focus on your users, and not the sign-in infrastructure to support them."
-categories: [Firebase, Authentication, Google, Login, Login Authentication]
+categories: [Firebase, SQL]
 comments: true
-tags: Firebase Authentication Google Apps
+tags: Firebase Database SQL
 ---
 
 
-## How does it work?
+Most SQL developers are like "I would like to know if it is possible to use Firebase as a SQL database. I have trouble with relations in NoSQL."
 
-![Google Firebase](https://firebase.google.com/docs/auth/images/auth-providers.png)
-{: .pull-right}
+It is not possible to use Firebase in this way. Firebase is a real-time object store. It is not a SQL database and is not intended to be a replacement for one. It completely lacks mechanisms such as JOINs, WHERE query filters, foreign keys, and other tools relational databases all provide. That doesn't mean it isn't a valuable tool. But any attempt to treat it "like" a SQL replacement is going to fail. That's not its purpose. But however it can give you the same end product as what you can achieve on an SQL database.
 
-To sign a user into your app, you first get authentication credentials from the user. These credentials can be the user's email address and password, or an OAuth token from a federated identity provider. Then, you pass these credentials to the Firebase Authentication SDK. Firebase backend services will then verify those credentials and return a response to you the client.
+#### Firebase is a document-oriented / NoSQL database,
 
-After a successful sign in, you can access the user's basic profile information, and you can control the user's access to data stored in other Firebase products. You can also use the provided authentication token to verify the identity of users in your own Firebase backend services.
+So am going to to go over how data is been stored better in sql databases and NoSQL database like the Firebase databases 
 
-<div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8sGY55yxicA" frameborder="0" allowfullscreen></iframe>
-</div>
+Relational databases use tables to store data, and a table is made up of columns in rows, and a column is a field of data like name, birthday or age, while a row is the entire record that represent 
 
-Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to your app. It supports authentication using passwords, popular federated identity providers like Google, Facebook and Twitter, and more.
+![SQL](assets/images/post/sql.png)
 
-##### Firebase Authentication integrates tightly with other Firebase services, and it leverages industry standards like OAuth 2.0 and OpenID Connect, so it can be easily integrated with your custom backend.
+To prevent null or empty input in the database row we use schemas.
 
+#### A schemas is like a blueprints that tells the system how the data should be organized, it specified what the data-type is and also if it's required. this is called "constraints"
 
-Read more -- [Firebase Google](https://firebase.google.com/docs/auth/?utm_campaign=Firebase_announcement_education_general_en_05-18-16_&utm_source=Firebase&utm_medium=yt-desc)
+![SQL](assets/images/post/constraints.png)
+
+one of the most important/special constraints is the primary key each row have them and must be unique because its use to uniquely identify each record.
+
+If you want to insert data into this field that does not already exist in the database schemas for example inserting an extra field called **published** with the value of **TRUE**, Well it’s not going to allow that 
+
+![SQL](assets/images/post/insert.png)
+
+![SQL](assets/images/post/insert_error.png)
+
+So to make that possible, one have to write an alter statement to add it to the schemas, This statement will have a **published** column and also a constraints
+
+![SQL](assets/images/post/al.png)
+
+![SQL](assets/images/post/altar.png)
+
+But with NoSQL JSON databases like the Firebase database you don’t need any of the schemas and constraints mentioned above. **JSON is really simple it has keys, and values**. The key stands for an identifier while the value is just a value.
+
+This provide a lot of flexibility so you don't go ahead and alter your schema just to updating a field that is not there 
+
+However, just because it does not use schema and constraints does not mean you don't have to validate the data been saved to the firebase database. The Firebase database has a rules language called security rules
+
+This rules allow you to specify the shape and size of data values before they get saved into the database, this way you still get to validate your data structure as if it was a schema with constraints
+
+Keep in mind that the key use in any JSON like database is more like the identifier and as to be unique, It’s also the same thing as primary key in a SQL database 
+
+#### More details on rules here: 
+* [Firebase security](https://firebase.google.com/docs/database/security/)
+
+### Converting your SQL database structure to a non-schema / JSON database like Firebase
+
+So what am going do is take a relational model that you see in SQL database and them convert it to a NoSQL model that works well for the Firebase database. We will still be working with the database structure **Event**. So below is what it will look like designing the same database in Firebase
+
+![SQL](assets/images/post/firebase_schema.png)
