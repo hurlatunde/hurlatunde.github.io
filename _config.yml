@@ -73,3 +73,6 @@ exclude:
   - "*.Rmd"
   - vendor
   - .travis.yml
+
+plugins:
+  - jekyll-seo-tag
