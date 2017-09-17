@@ -61,3 +61,13 @@ Keep in mind that the key use in any JSON like database is more like the identif
 
 #### More details on rules here: 
 * [Firebase security](https://firebase.google.com/docs/database/security/)
+
+So what am going do is take a relational model that you see in SQL database and them convert it to a NoSQL model that works well for the Firebase database. We will still be working with the database structure **Event**. So below is what it will look like designing the same database in Firebase
+
+![SQL](assets/images/post/firebase_schema.png)
+
+and the inset query is as easy as it could.
+
+![SQL](assets/images/post/json_insert.png)
+
+will be talking more about complex SQL structure and converting that to Firebase database structures in the next post
