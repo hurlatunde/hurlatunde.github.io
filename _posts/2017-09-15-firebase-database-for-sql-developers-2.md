@@ -6,14 +6,16 @@ description: "Converting your SQL database structure to a non-schema / JSON data
 date:   2017-09-14 03:18:00
 subclass: 'post tag-test tag-content'
 navigation: True
-logo: 'assets/images/hurla_logo_white.svg'
-cover: 'assets/images/firebase.png'
+logo: '/assets/images/hurla_logo_white.svg'
+image: '/assets/images/firebase.png'
+cover: '/assets/images/firebase.png'
 comments: true
 image:
   feature: firebase
   credit: Google Firebase
 categories: [Firebase, SQL]
 tags: Firebase Database SQL
+author: hurlatunde
 ---
 
 #### Converting your SQL database structure to a non-schema / JSON database like Firebase

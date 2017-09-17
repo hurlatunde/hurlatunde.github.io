@@ -18,6 +18,16 @@ bio: 'Creating the world of ME with each code'
 location: 'Lagos, Nigeria'
 url: 'https://avatars.io/twitter/hurlatunde'
 image: 'assets/images/hurlatunde.jpeg'
+twitter:
+  username: hurlatunde
+social:
+    name: Olatunde Owokoniran
+    links:
+      - https://twitter.com/hurlatunde
+      - https://www.instagram.com/hurlatunde
+      - https://www.linkedin.com/in/olatunde-owokoniran-4b44a654
+      - https://plus.google.com/+hurlatunde
+      - https://github.com/hurlatunde
 
 short_url: 'hurlatunde.github.io'
 google_analytics: UA-69281367-1
