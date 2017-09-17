@@ -34,7 +34,7 @@ To retrieve data from the SQL database image above the query will go as follow
 
 So to what we have been waiting for translating the relationship in a Firebase database type
 
-With the Event structur in mind we will want to create a JSON like database for the reslatioship
+With the Event structure in mind we will want to create a JSON like database for the relationship like this
 
 {% highlight json %}
 {

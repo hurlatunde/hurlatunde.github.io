@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c32a1a0-f95f-4d67-9e5d-a76702b1cc5b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/navigation.html" afterPath="$PROJECT_DIR$/_includes/navigation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/page.html" afterPath="$PROJECT_DIR$/_layouts/page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-09-14-firebase-database-for-sql-developers.md" afterPath="$PROJECT_DIR$/_posts/2017-09-14-firebase-database-for-sql-developers.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-09-15-firebase-database-for-sql-developers-2.md" afterPath="$PROJECT_DIR$/_posts/2017-09-15-firebase-database-for-sql-developers-2.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about/index.html" afterPath="$PROJECT_DIR$/about/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/syntax.css" afterPath="$PROJECT_DIR$/assets/css/syntax.css" />
     </list>
     <ignored path="hurlatunde.github.io.git.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,12 +24,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2017-09-15-firebase-database-for-sql-developers-2.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2017-09-15-firebase-database-for-sql-developers-2.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2017-09-15-firebase-database-for-sql-developers-2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="120">
-                <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="9" selection-end-column="35" />
+              <first_editor relative-caret-position="413">
+                <caret line="74" column="22" lean-forward="true" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -111,7 +104,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigation.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navigation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/navigation.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -198,12 +191,12 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_posts/dddd.json" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
-        <option value="$PROJECT_DIR$/_posts/2017-09-15-firebase-database-for-sql-developers-2.md" />
         <option value="$PROJECT_DIR$/assets/css/syntax.css" />
         <option value="$PROJECT_DIR$/_layouts/page.html" />
         <option value="$PROJECT_DIR$/about/index.md" />
         <option value="$PROJECT_DIR$/about/index.html" />
         <option value="$PROJECT_DIR$/_includes/navigation.html" />
+        <option value="$PROJECT_DIR$/_posts/2017-09-15-firebase-database-for-sql-developers-2.md" />
       </list>
     </option>
   </component>
@@ -267,6 +260,11 @@
               <item name="hurlatunde.github.io.git" type="b2602c69:ProjectViewProjectNode" />
               <item name="hurlatunde.github.io.git" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="_plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hurlatunde.github.io.git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hurlatunde.github.io.git" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_posts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="hurlatunde.github.io.git" type="b2602c69:ProjectViewProjectNode" />
@@ -406,12 +404,12 @@
       <workItem from="1505114218788" duration="924000" />
       <workItem from="1505214412920" duration="446000" />
       <workItem from="1505217253339" duration="21078000" />
-      <workItem from="1505581221031" duration="15884000" />
+      <workItem from="1505581221031" duration="16451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149153000" />
+    <option name="totallyTimeSpent" value="149720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="146" y="371" width="1682" height="791" extended-state="0" />
@@ -813,17 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-09-15-firebase-database-for-sql-developers-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="120">
-            <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="9" selection-end-column="35" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -888,6 +875,17 @@
         <state relative-caret-position="225">
           <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-09-15-firebase-database-for-sql-developers-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="413">
+            <caret line="74" column="22" lean-forward="true" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
