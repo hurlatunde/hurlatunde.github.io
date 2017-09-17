@@ -1,25 +1,39 @@
 ---
 layout: default
 title: About
-class: 'post'
+class: 'page-template'
 navigation: True
-logo: 'assets/images/ghost.png'
+logo: 'assets/images/hurla.svg'
+cover: 'assets/images/firebase.png'
 current: about
 ---
 
-<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}){% else %}no-cover{% endif %}">
-    <nav class="main-nav {% if page.cover %}overlay{% endif %} clearfix">
-        {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
+<header class="main-header post-head {% if page.cover %}"
+        style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %} ; height: 38vh;">
+    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
+        {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}"
+                                                                              alt="Blog Logo"/></a>{% endif %}
         {% if page.navigation %}
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-            {%  include navigation.html %}
+        <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         {% endif %}
     </nav>
 </header>
 
+<main class="content" role="main">
+    <article class="post">
+        <!-- Everything inside the #post tags pulls data from the post -->
 
-This is a demo blog for Ghost, it contains dummy content which allows you to click around and see what a Ghost blog running the default theme looks like.
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+        </header>
 
-We use this for testing and for reference!
+        <section class="post-content">
+            <p> {{ site.description }}</p>
 
-If you'd like to set up your own blog, head on over to [https://ghost.org](https://ghost.org) and sign up.
+            <!--<p>We use this for testing and for reference!</p>-->
+
+            <!--<p>If you'd like to set up your own blog, head on over to [https://ghost.org](https://ghost.org) and sign-->
+                <!--up.</p>-->
+        </section>
+    </article>
+</main>
